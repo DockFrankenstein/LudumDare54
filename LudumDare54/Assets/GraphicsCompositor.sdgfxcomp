@@ -152,7 +152,7 @@ SharedRenderers:
             61b557b74893400898c007d5ece5e87f: ref!! 7609aad5-57ca-4d3f-89a9-72d977a7584e
             5c382f66ee524c498d26d9aaf19fc9c3: ref!! d45d3728-c964-478d-9a06-769599b1cd31
         GBufferRenderStage: ref!! 9be53bde-cd76-455e-aaae-7743e127837e
-        PostEffects: null
+        PostEffects*: null
         LightShafts: null
         VRSettings:
             Enabled: false
@@ -164,44 +164,59 @@ SharedRenderers:
     34ecb9b2633eacfc439ba8744fe05102: !PostProcessingEffects
         Id: 51b00e39-407f-4468-a8ce-a626e493491f
         Outline:
-            Enabled: false
+            Enabled*: false
             NormalWeight: 2.0
             DepthWeight: 0.2
             NormalNearCutoff: 0.1
         Fog:
-            Enabled: false
-            Density: 0.1
+            Enabled*: true
+            Density*: 0.2
             Color: {R: 1.0, G: 1.0, B: 1.0}
-            FogStart: 10.0
-            SkipBackground: false
+            FogStart*: 4.0
+            SkipBackground*: false
         AmbientOcclusion:
-            Enabled: false
+            Enabled*: true
+            ParamIntensity*: 0.2
+            BlurScale*: 3.0
         LocalReflections:
-            Enabled: false
+            Enabled*: false
             ResolvePassResolution: Full
             DepthResolution: Half
         DepthOfField:
-            Enabled: false
+            Enabled*: false
             DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
         BrightFilter:
+            Enabled*: true
             Color: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
+            Enabled*: true
+            Radius*: 10.0
+            Amount*: 0.4
             Distortion: {X: 1.0, Y: 1.0}
             Afterimage:
                 Enabled: false
         LightStreak:
+            Enabled*: true
             Attenuation: 0.7
-        LensFlare: {}
+        LensFlare:
+            Enabled*: true
+            Amount*: 0.5
+            ColorAberrationStrength*: 0.42
+            HaloFactor*: 1.0
         ColorTransforms:
+            Enabled*: true
             Transforms:
                 1e06f805f8b2e949a06c30d45fe413ef: !ToneMap
-                    Operator: !ToneMapHejl2Operator {}
-                c57351444609d14ea258b3f511ec8a74: !FilmGrain
-                    Enabled: false
+                    Operator*: !ToneMapACESOperator {}
+                    Contrast*: 0.1
                 e86e22e9a5d65545b8b55fca26e0afee: !Vignetting
-                    Enabled: false
+                    Enabled*: true
+                    Amount*: 0.337
+                    Radius*: 0.6
                     Color: {R: 0.0, G: 0.0, B: 0.0}
-        Antialiasing: !FXAAEffect {}
+                c57351444609d14ea258b3f511ec8a74: ~(Deleted)
+        Antialiasing: !FXAAEffect
+            Dither*: Medium
     ee80a20a9bd99f2d70711114e15fe7ca: !Stride.Rendering.Compositing.DebugRenderer,Stride.Rendering
         Id: b57ad8ed-2929-44fa-a33b-ec1c56bd33b5
         DebugRenderStages: {}
