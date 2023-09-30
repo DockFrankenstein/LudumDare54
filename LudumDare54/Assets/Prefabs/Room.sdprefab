@@ -127,40 +127,6 @@ Hierarchy:
                 BasePartId: 67e62c64-5333-42c2-aa0e-7530f65f263f
                 InstanceId: 1f2fb249-d837-4afd-9fba-c64ac3fbd5c1
         -   Entity:
-                Id: 44fdefe0-3a42-4f45-bea2-0f8dc77f3439
-                Name: Sphere
-                Components:
-                    cf0552df360d88c6df4d9802580803d9: !TransformComponent
-                        Id: 584ead61-5620-42c6-b260-4929cae61f0d
-                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    201e441d2af5c26107aa80df84cbd93e: !ModelComponent
-                        Id: 9820a772-0258-41e2-a81e-48d829e0d96e
-                        Model: 34775656-ae68-4b3d-892a-d8c91b21b053:Models/Sphere
-                        Materials: {}
-                    038da119843b9a81f15724f9d6ac4fbc: !RigidbodyComponent
-                        Id: 6a08f5d5-ef53-4ed4-9feb-0469edcf4bff
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        IsKinematic: true
-                        Mass: 1.0
-                        LinearDamping: 0.0
-                        AngularDamping: 0.0
-                        OverrideGravity: false
-                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
-                        NodeName: null
-                        ColliderShapes:
-                            7ae9a9fad14c766b4b95199c4d49754d: !SphereColliderShapeDesc
-                                Is2D: false
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-        -   Entity:
                 Id: 51a67c4a-0d08-4724-b164-9d6239bc84a7
                 Name: Directional light
                 Components:
@@ -372,7 +338,6 @@ Hierarchy:
                             cc1051bf8854a636d214b1106aeef44b: ref!! 4c1d64ed-2fd2-4c7d-a76b-32be255ecaa7
                             5a15efb02a56a49b44d4ae2190578812: ref!! 0e33b5a2-85c2-4951-a6f8-30bb91389148
                             4b7e5f550d7762301a217f9fa2a22ac9: ref!! c04e7464-fa4d-49a1-8351-55e9e2106153
-                            560310791ad60aec1c5a9f8cbde37ab6: ref!! 584ead61-5620-42c6-b260-4929cae61f0d
                             55d20452fcd387fe3149fce2d558f076: ref!! 664f1d2c-8eb5-4126-a902-4addc36dbba0
                             09200679dce470015374a30d4c2f5479: ref!! caafe4cd-eb17-4fbc-890d-8ac6b1bce3cf
                             f72b79e81be339f507a865e3d01eebb6: ref!! c4f13f1e-369a-49da-af5c-c2b18ca1a389

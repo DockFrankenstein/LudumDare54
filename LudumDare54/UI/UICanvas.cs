@@ -62,6 +62,11 @@ namespace LudumDare54.UI
             Active = activeByDefault;
         }
 
+        public override void Cancel()
+        {
+            Active = false;
+        }
+
         public override void Update()
         {
 

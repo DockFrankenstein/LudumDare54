@@ -16,6 +16,9 @@
     <ProjectReference Include="..\qASIC.Core\qASIC.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Assets\Scenes\MainScene.sdscene">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Spartan-Black.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -1,0 +1,3122 @@
+!SceneAsset
+Id: 292dfd88-5050-4fcf-a810-d0045e697625
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Parent: 9bfa0258-0d25-4685-9dc4-b34432eb9000:Scenes/MainScene
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 4abda0d7-d359-4485-b133-3a8262f860ac
+        - ref!! eb841715-ac16-442b-8f7a-c84690c5affa
+        - ref!! 4f756b2c-aa9e-48ea-9f8e-4c05456cc42a
+        - ref!! edd14b0e-0664-4c2e-b834-d8701ec78b78
+        - ref!! cf7c60a4-b234-49be-a06a-8d0d8ead9b25
+        - ref!! d536c6d9-a3ba-4139-90b2-bb84645e85d9
+        - ref!! ee14a7d1-6ce7-48db-bf1a-d7e87151e3ac
+        - ref!! d267d068-1e5c-46df-9833-c213407a2db9
+    Parts:
+        -   Entity:
+                Id: 0064c460-4aaf-48f1-9d9d-d7b1085b4ff4
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 461880ae-c1d4-4c55-8621-4ee5ab56dbff
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 0d54c952-7888-45db-8d60-25e345975de7
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            db113763cef73af887fa21ec4535d5d3~0: 6baf2978-705d-4603-bf8f-9c840d1cd288:Materials/Floor Tiles
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 5ea54140-4e85-45f5-9763-a5a965429414
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 027e78ed-0455-4bb5-b5f4-b847908ce86a
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 054dc28c-d4a6-45ba-afd8-b4492b5cd451
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 3c2f37e2-5943-485f-8133-7e59e41cea48
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: e7bd1909-2677-496d-882e-573032107531
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: 05ddbc23-8499-4c4f-98d3-3b82a02420dc
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 2fced7f6-aeca-42ea-989a-a1094aaab3de
+                        Position: {X: 4.6166973, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 0f21eb27-ceb7-434a-b370-901d2f3651c7
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 0be736fa-ba71-4891-86ba-b0d1fc197746
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: 514261a8-e86e-42f1-a803-384de8d1c405
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: d4364535-2b82-41c1-ac6a-e3c3014c4369
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: 3de02058-35fa-498d-a2a7-3e47237e15e7
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: d5a79736-cf4d-468a-86c8-03dc3dcb13bd
+                        trigger: ref!! 3de02058-35fa-498d-a2a7-3e47237e15e7
+                        teleportRoom*: ref!! c4146a79-8914-411e-8cf9-5d82f7079048
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 0d40dd4a-626a-4f9e-90dd-aa03e69d6f88
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 683316c6-4666-47ad-833c-2dc2cd89d8cc
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 492b5932-72a7-4cc6-a5a1-550899e80e44
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 0.8
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 1697ad28-598f-4ad8-8753-ca7e69c1c411
+                Name: Camera
+                Components:
+                    8b5e6594ba5bfd09d37244fcd0874e0c: !TransformComponent
+                        Id: 80f624d2-fced-4efd-bb04-aeeacac85e49
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8e9abfe554d50a7b309fcc5432305da8: !CameraComponent
+                        Id: 337ed693-3e2a-47c9-a0d9-8d88dcfa9ed7
+                        Name: null
+                        Projection: Perspective
+                        Slot: b3634505-47e8-4ff2-81dc-11f6181125df
+        -   Entity:
+                Id: 17990478-ee31-45bb-a934-0e6b370f0c45
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: e22f9d44-73c7-4255-98ab-777b68f88b7d
+                        Position: {X: -5.0566087, Y: 6.2814274, Z: 4.5959516}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 559f4f21-f257-4df6-ab39-330791de4e2e
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: d182c09b-505b-4c9f-aab1-4a0bf85e1c49
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 1a104b14-e39b-44c1-8430-3a2f1d8431c7
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: c26f5438-496b-4b13-9417-f994c779e4b5
+                        Position: {X: 0.0, Y: 10.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 3b6ce121-2bcd-470c-a21d-a67b245931cb
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 0102b4be-fe72-49b9-8a85-4db213b51d97
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: 1b97da11-1ab3-4abb-8045-cb7be0533aaa
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: b285c80b-b45e-49f7-b5e4-cce8bdae6dc3
+                        Position: {X: 10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: bafc62f9-fe1c-4e61-ab7e-a8e657abf720
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: becb417f-442c-4536-9715-daa10a0070a7
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 1dd989c9-0fd3-4235-8f71-46b17ad47352
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: f132a5f6-9140-44ae-84f8-b67caab45714
+                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: f3a15427-dd1d-47ba-85e1-281ef1a20818
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            1d72d092e6ae4ed287dd0c24fb766312~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 4f8cad8b-aa71-46d2-9cd3-d517b67b31ef
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 1ee519db-91c4-4746-b2fb-8be618d34a7e
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: eac23bd6-c53a-4c81-8565-05c996fc060d
+                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: dd3e2813-f72e-4f71-a80e-fa4f01fa403f
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            1d72d092e6ae4ed287dd0c24fb766312~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: eed68fb9-6a99-47ec-9e4a-a769f6dab34a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 208f06f2-4702-434a-a8f4-bb2cdc471347
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 316ce5cb-5d90-4ded-b6b3-1ca372d11033
+                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: b67cc86e-51b4-4e8b-bc93-3f45c506b1d5
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            1d72d092e6ae4ed287dd0c24fb766312~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 3ad2d584-b486-4a12-97e6-d30a4fc933f4
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: 26f92c85-0ae0-42a9-bb4f-6ba29723e010
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 0191aae3-1340-40c4-b1b7-5d2f3f8d0894
+                        Position: {X: 4.6166973, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: f9bb3bd6-3efd-4201-bd14-62c07ecfe22b
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 288e8df9-fa83-4efb-8775-37e7429337c9
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 3bb18def-174e-42b9-b3a9-bc301357840a
+                        Position: {X: -5.0566087, Y: 6.2814274, Z: 4.5959516}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: c257eb13-198c-452f-a1fc-3cc3b683536b
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: d182c09b-505b-4c9f-aab1-4a0bf85e1c49
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 29e5d4a4-0f48-4909-ae08-a371750c60fc
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 4a2304cc-c308-4aef-962b-afbf1f5a399b
+                        Position: {X: 0.0, Y: 10.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 9a4cbd80-4a79-46dc-98e0-9bfb539342f9
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: e5083add-25a3-47c3-a32d-80740eefb74f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 2b341bb1-32e1-491a-9943-02858e8f1b68
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 6e82b292-f9eb-4875-b0e4-28a07f0e3ce6
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: a4edaf1d-6512-4864-bdf9-c95ebae0c1c8
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 2be17f78-99ef-4f9b-9c53-b4a63147cb17
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: e6c470cd-555e-4755-aa39-f56876e94361
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 2dd3657d-5eaa-4e82-99f2-a595d0f7392d
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 3888c8e2-8566-4546-89fa-e8cd78520b98
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: f8db7da5-3724-42ac-a834-03c4a71a9cf8
+                        Position: {X: 10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: d19f0d39-a1ef-4529-8451-c2dde8f8ce6b
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 07bc8b09-367e-4071-8c57-1358984abd3f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 3dca739c-9375-496c-ba9d-ecb03a2c5f32
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: c1e6443f-d47f-4dbf-be8b-44a56fc33d87
+                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: ffec6c6a-2d30-4f4e-91e6-c71972b809f8
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            1d72d092e6ae4ed287dd0c24fb766312~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: bd967b22-517f-4061-9ede-a5bde6a21db8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 3ef42cc5-adfe-42ff-9cb1-1bc19cbbc178
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: dae97aaa-2621-476b-b791-720d3508ac9a
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: f54cccd1-853a-4c79-978c-165971954b86
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: e7bd1909-2677-496d-882e-573032107531
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 403404de-a734-41c1-b326-7efd4fe59c83
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: 2a6859cf-05e0-4d58-bec4-950258bc45f4
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: 8b37d3c0-545f-4b92-b7b3-a223f6b3cd90
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: dc2d610d-8d90-4439-b3a8-e426ce087690
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: 7a27c182-ef6a-4bfe-bfed-c31e730dc5c1
+                        trigger: ref!! dc2d610d-8d90-4439-b3a8-e426ce087690
+                        teleportRoom: null
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 408495c4-0c18-415e-8bda-d3d7a53adb42
+                Name: Capsule
+                Components:
+                    744eead40c82e5608a72b8d0a6824871: !TransformComponent
+                        Id: 32aaa455-f29b-4d9e-a497-cf8b9f189a28
+                        Position: {X: 0.0, Y: 1.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9e351ae6009429d3f7b3aafbe8ecbcc4: !ModelComponent
+                        Id: 198523c5-0cf1-4e56-bc6b-54e50b9a77b6
+                        Model: ab6bcafd-9222-43ce-bc51-931f5fc62a3c:Models/Capsule
+                        Materials: {}
+        -   Entity:
+                Id: 415ee55f-208a-4bc1-bdd9-1ed82cde87e7
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 3b185857-7902-4769-8d53-e8adce8e2c13
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 5f672456-a76d-46cd-8927-03142a5c6f3b
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: e7bd1909-2677-496d-882e-573032107531
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 42620a1e-b675-4f87-a3b5-79cadad924b7
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 21b1955a-2123-40d7-8297-2bfb02ce16c8
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: e5495b37-d3e0-4e6b-8d4f-a4b7911c80db
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            db113763cef73af887fa21ec4535d5d3~0: 6baf2978-705d-4603-bf8f-9c840d1cd288:Materials/Floor Tiles
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 0529507a-4d4c-49ac-923e-04cef5fa3fed
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 433f1d8c-0cf6-4f3c-be6b-2168de4ca30e
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 9212f244-571a-44d2-946a-302e93155805
+                        Position: {X: -5.0566087, Y: 6.2814274, Z: 4.5959516}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 9ccad4f2-60be-4b3a-9eb8-86adac4f0564
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: d182c09b-505b-4c9f-aab1-4a0bf85e1c49
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 43e90995-dfb6-4522-9e25-9ff8961e9b5d
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 6acc7fed-5ca4-4eb4-823d-6d922cf67f80
+                        Position: {X: 0.0, Y: 10.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: cf90bec0-40d7-4f66-b3fd-ac46e40cd7eb
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 90a50958-6228-4504-8d25-9bf1b89bbb4a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: 46cb0945-6725-41b6-9f6c-2593cfc99bd3
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 15b79211-408f-496e-aa36-3539726e5219
+                        Position: {X: 0.0, Y: 10.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 2adce7eb-d20b-42c3-9a53-e34ee097363c
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 367dc668-d461-433b-bb45-d16cc33cc172
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 4abda0d7-d359-4485-b133-3a8262f860ac
+                Name: Player
+                Components:
+                    cd6027d64a6b8ce3b055d1be6c87114d: !TransformComponent
+                        Id: ac7a1832-8db8-4b45-8239-eae0e32e4e13
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            4c5b1836d939ecb0b7d086c95f2ee741: ref!! 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
+                            d0333b96b46d0dcbca71db367a458e69: ref!! 32aaa455-f29b-4d9e-a497-cf8b9f189a28
+                    11fbb9b341fd4185295ba06292ecbb50: !CharacterComponent
+                        Id: a3c2e806-e42e-4597-b64e-518361a3284a
+                        CollisionGroup: CustomFilter1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            fdf37fd019162f83a97db3db49dc2b65: !CapsuleColliderShapeDesc
+                                Length: 1.0
+                                Radius: 0.5
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    7d4f96a365570336e69bbda10a1b103f: !LudumDare54.Player.PlayerMove,LudumDare54
+                        Id: f4fb0b14-f8cd-4b65-88f2-915c07286867
+                        character: ref!! a3c2e806-e42e-4597-b64e-518361a3284a
+                        directionTransform: ref!! 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
+                        speed: 6.0
+                    a23f19d534c227bb3a3c5a4a0d4dc34c: !LudumDare54.Player.PlayerLook,LudumDare54
+                        Id: f3e32042-fefb-4054-ba3b-2ecc95de3c03
+                        XRotation: ref!! 5f2a0426-9ec3-4aca-829f-a9b495706d53
+                        YRotation: ref!! 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
+                    18555c2dc9bb96e067f06da0622b85e4: !LudumDare54.Player.PlayerInteract,LudumDare54
+                        Id: 1fbc81a7-a082-483c-9ae4-f25edcefa86b
+                        length: 8.0
+                        center: ref!! 80f624d2-fced-4efd-bb04-aeeacac85e49
+                        physicsComponent: !CharacterComponent ref!! a3c2e806-e42e-4597-b64e-518361a3284a
+                        layer: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, SensorTrigger, CharacterFilter, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10
+        -   Entity:
+                Id: 4c77f22e-c3ea-4fa4-9a18-75c9545b5081
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 30528991-765b-4435-9d8c-b6220c7dd1e4
+                        Position: {X: 4.6166973, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 9f0d4524-410d-46f6-8ca0-5112c164d136
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 4f69c1b7-9134-458d-8792-ad6925f33da9
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: b8eb6a91-4809-4173-8feb-7cd69755db16
+                        Position: {X: 0.0, Y: 10.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 99ec1735-431e-4003-a3db-3590a2d2c6e5
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: b40eec78-0421-4242-86c2-a62bf738b483
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Folder: null
+            Entity:
+                Id: 4f756b2c-aa9e-48ea-9f8e-4c05456cc42a
+                Name*: S2
+                Components:
+                    ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
+                        Id: 612f4301-80d3-4023-9b0f-94f2e4382063
+                        Position*: {X: 47.842335, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c30adbe3de6f4e74993c3d6fac0053b6: ref!! 51f1d53a-21e0-4660-aa9a-956119e9cb02
+                            eb77931cdde337acbf9c9fe59d8dbff5: ref!! 6922a9f6-d5bc-45f0-bc1e-94497beba700
+                            cced41135b2a924382c27f50e4b6633b: ref!! 0191aae3-1340-40c4-b1b7-5d2f3f8d0894
+                            e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 655f0b74-6c21-446b-a994-148d6a008ae1
+                            d1075401a81238639c2a4724da6639fb: ref!! 3bb18def-174e-42b9-b3a9-bc301357840a
+                            cc1051bf8854a636d214b1106aeef44b: ref!! 683316c6-4666-47ad-833c-2dc2cd89d8cc
+                            5a15efb02a56a49b44d4ae2190578812: ref!! 793e4611-02b3-47aa-8941-e70e3594db78
+                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! 416ad85f-346c-48ed-8675-5b7cec7334c2
+                            55d20452fcd387fe3149fce2d558f076: ref!! 0cd2b367-eb60-4bac-b63a-d001862b6fcb
+                            09200679dce470015374a30d4c2f5479: ref!! caee3506-f2d4-40a5-9c9a-bfb17671f8f5
+                            f72b79e81be339f507a865e3d01eebb6: ref!! c1e6443f-d47f-4dbf-be8b-44a56fc33d87
+                            fb306c7574a09261cb94c6acddbaefd5: ref!! b285c80b-b45e-49f7-b5e4-cce8bdae6dc3
+                            c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! b6be7fba-63d2-47af-9f08-89ba81c8fae7
+                            761038817211a1e05101c6c2a4bb11bc: ref!! 21b1955a-2123-40d7-8297-2bfb02ce16c8
+                            1d7a9d916fdb51f866a67e6553540bf9: ref!! a87ca900-e87e-4280-883e-85ff9b49a3ae
+                    b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
+                        Id: f1067cff-cc4c-4730-97fb-d3fbc4607a7c
+                        startPoint: ref!! a87ca900-e87e-4280-883e-85ff9b49a3ae
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c004d39d-5a8c-462f-84f7-e7f4d8c35a1b
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 503b09df-20c7-4cd3-b86d-b0366720ecf8
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 91641296-73bc-4c8b-b129-90dba7371664
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 114c43a9-7d66-4a6b-bf0b-bcefd3d7d1b7
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 0.8
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 591ef6f3-4e5d-4d40-81b0-7eed3c76c318
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 84aff0db-9145-44fc-99ad-33a4f33dd436
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 1d707928-d9b0-4dcd-9d31-e74a4344c464
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 9931b562-885a-46a1-a68e-3eb8d4a5858a
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 599493e6-0ba1-4b06-932e-05fbe6a37065
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: ff9ca00b-088a-42c2-8e2e-e1a402e500ca
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: f2fb403f-1c2c-4f2d-bf2f-3d787fff651e
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: 3ffb9916-dcff-4c6e-8746-1f4c6089b220
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: 29cbd9ad-18c3-4618-9650-1070a9160af8
+                        trigger: ref!! 3ffb9916-dcff-4c6e-8746-1f4c6089b220
+                        teleportRoom*: ref!! a344fe07-1635-4d13-8417-61664e749044
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 5ba30b4e-251b-4ce2-a448-679a059e4177
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 36380575-42de-46a8-b6a0-894beab223e4
+                        Position: {X: -5.0566087, Y: 6.2814274, Z: 4.5959516}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: e7a7807e-a61c-4ab1-a066-485c63cb413f
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: d182c09b-505b-4c9f-aab1-4a0bf85e1c49
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 5ddfe01b-6f48-49d3-8b53-a7c6dd0075c5
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 4530192b-bad3-4e49-891b-2ec6ff11ee9f
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 9b6fbbf8-75dc-4b82-b278-2dce15f757e0
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: e7bd1909-2677-496d-882e-573032107531
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 5f7c5f2c-4805-4e52-b60c-db176270925a
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 9a49292e-c286-41ed-9f24-1203267619f5
+                        Position: {X: 10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: aae9927b-aa37-450c-aa25-a2302c3de534
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: b5271486-2b66-4012-938b-af07dd173158
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 6028a407-2585-435f-bbdb-e1403d721b6f
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: caee3506-f2d4-40a5-9c9a-bfb17671f8f5
+                        Position: {X: 0.0, Y: 10.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 532520ef-2c40-4b4b-94ab-20b013f5354f
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: b95adf2b-6b66-458a-a241-43a7739322dd
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 6199d727-fcce-4407-b967-9bf2a067343c
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: e1dbdba7-0da0-4818-bbb0-4bfbcf5a2921
+                        Position: {X: -10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: a55ca2f1-ac0c-4fd2-8852-73db65afd3ae
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: c10c6f9f-5659-4a6e-b7bf-51d3f38b70fb
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 629fc239-f7eb-4885-bc8c-7ed6028aa598
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 655f0b74-6c21-446b-a994-148d6a008ae1
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 1bbaa730-bfbb-466c-a08f-1310949c3850
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 9931b562-885a-46a1-a68e-3eb8d4a5858a
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 63b92ee1-d59a-4397-8e8d-4b314ff450cd
+                Name: Start Position
+                Components:
+                    3d6cfbbdecd1c7854077fa16b178a974: !TransformComponent
+                        Id: 16f94807-03a7-4b40-88dd-1e5f207e250c
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 63ce0e40-4b9c-4087-8f60-ec5708908778
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 31cf1779-de1b-424e-90d0-fe58cdfbf2df
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 7e02c110-6760-40ae-8b6d-c5baeefafc52
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 644b3ba8-280c-453c-8eee-0b84f2cbd706
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 2f95f18a-ec7a-45f6-9517-58f70dc66d5e
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: f3d695fd-fd11-443d-8c82-92654b2a34df
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 0.8
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 688fdfb4-496f-4dfb-ad12-9c97ff9cd83e
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 154f4e18-03ab-4280-be49-ba6b1b858ced
+                        Position: {X: 10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 50ba2124-3e49-498b-aaa1-226345311c8e
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 4b0e719f-425d-4beb-9d4e-aa5f997c8796
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: 6db27090-0f8d-4262-8ebd-226c4c828578
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 1b157510-34d6-4d0c-b341-4d229188e005
+                        Position: {X: 4.6166973, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: a5386334-faea-44ca-b6f2-eed0e2056848
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 6f13d15e-055b-471c-a970-845fdbfc3dba
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: c52b1f96-0d57-45e3-a32d-1c0920ad707c
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: cb857c49-582e-40b4-9ef1-63347d4973c4
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: d16e8a54-8024-4876-b980-db787616fd13
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: b303a7f2-5113-4402-bdda-e7711ea5b159
+                        trigger: ref!! d16e8a54-8024-4876-b980-db787616fd13
+                        teleportRoom: null
+                    34763a73de35ad5a0655f34d42bcb661*: !LudumDare54.EndingTrigger,LudumDare54
+                        Id: 5f2d86ed-3ea5-4cd4-b690-f329edf8652c
+                        activeByDefault: false
+                        uiPriority: 0
+                        Active: false
+                        door: ref!! b303a7f2-5113-4402-bdda-e7711ea5b159
+                        messages:
+                            bba8f25cffa692a7b89e7aaf8958e8d1: Maybe care enough to look behind yourself next time?
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 7099f9f0-f5d5-49ca-ab7a-ea8b648728e2
+                Name: Camera Axis Y
+                Components:
+                    dddcddf6eecc4d74661403d09373d005: !TransformComponent
+                        Id: 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
+                        Position: {X: 0.0, Y: 1.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            392fcede5cbce1058fcb6dbbe85e28a6: ref!! 5f2a0426-9ec3-4aca-829f-a9b495706d53
+        -   Entity:
+                Id: 736d2204-0d21-4283-ba61-ccc649ce7490
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 6922a9f6-d5bc-45f0-bc1e-94497beba700
+                        Position: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 7599c65d-256a-405c-98bb-5b6477c58065
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: 73a6b408-ebfa-42d4-9443-b7df5aee5f26
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 3f71f623-df13-4479-baec-4d2cb03ab35d
+                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: f94e0182-1a51-4d9c-84e2-75a41dab5fe5
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            1d72d092e6ae4ed287dd0c24fb766312~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: d4af9557-da40-4cce-9a08-62ba22e8b675
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 7e60406d-b7f3-4ee7-a101-142064df1ee4
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 13b86d2c-a7d9-4f4f-a157-75edf7797956
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 4a68635a-ea96-46bc-b3eb-5a427706e495
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 0.8
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 7fa08400-b39a-4317-9c62-dd34a2e1bfc3
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 43c9fb9a-cf72-40c8-8b8f-25736b7a31b3
+                        Position: {X: 10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: f4c5542b-f9d4-43d2-b8dd-0e7c247177d0
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: b7dfdf70-b76b-4b98-9cea-890ef49a537d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 837f6294-5742-4766-9c7b-ac6f782615e1
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 919f375d-663a-4f7c-b739-015854595897
+                        Position: {X: -10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: f9a3356d-6776-4dc7-a0cb-6845d3c4bbbb
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: b0e1c403-44ab-49e4-9f1c-739cfa96120f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: 8a16bf20-03dc-44d2-b933-443f16661412
+                Name: Start Position
+                Components:
+                    3d6cfbbdecd1c7854077fa16b178a974: !TransformComponent
+                        Id: 727a6a30-0316-44b4-958b-ef4e44e91f7b
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: 93fa922b-d936-468a-8e54-a97550bebdcc
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 67a97fe9-3e59-448b-9ed7-35a04ce128fc
+                        Position: {X: 0.0, Y: 10.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 4835e965-13b5-4cb0-85ea-882ed81a0a61
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 9f2b6453-da9f-4ee4-9deb-031a34093678
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: 94b3d4b0-9a43-444d-bde3-608a04f52273
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 6c3b7fbd-aafb-4fe0-9961-4f412855887f
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 2c2385dc-5498-4f5d-ab5f-dbcae8686f66
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: 95a64e82-5c4c-4c99-be72-c56bb5f733fe
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 8864b307-5b20-4e74-9f6c-44fd281d7d13
+                        Position: {X: 4.6166973, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: fa30b730-30ed-4e40-b645-c25675aaccca
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: a092b3b2-d08c-40ff-81a1-fd4254c45d89
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: f55d7231-8535-4aa5-a91b-63c0af4709e8
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 782dcfd3-455b-451c-9c1b-d2c433a57f90
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            db113763cef73af887fa21ec4535d5d3~0: 6baf2978-705d-4603-bf8f-9c840d1cd288:Materials/Floor Tiles
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: a430a642-6962-4585-9fdc-7a6588e1365a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: a9d3dc0b-b4b7-483b-b24b-cf5ea97ae2c8
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: baa180c7-586a-4ade-9817-b60bd5da2000
+                        Position: {X: -10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 0759da7a-1977-4345-9fd9-6231dca7c0f0
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: a39d6549-808e-4d48-a4d4-3b0d690ef74d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: b157b6aa-4ca4-45fc-b260-2f54f4ec84a3
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: be2595a3-2f59-4985-a541-96e64ea83e55
+                        Position: {X: -10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 0630b199-ebdc-4d7f-ac16-5619f2df8a5f
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 123b0a29-ea64-4d49-a75a-cd246f8d281e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: b171a9a5-0e9d-47b2-9afb-2ce6e703c8db
+                Name: Start Position
+                Components:
+                    3d6cfbbdecd1c7854077fa16b178a974: !TransformComponent
+                        Id: 29de5285-2871-4be8-95c0-f7769143a7ab
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: b2a437de-6145-4774-9410-4abe8da10ed1
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 416ad85f-346c-48ed-8675-5b7cec7334c2
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: fa3ddb1f-abbf-41c7-bfde-09b84e2e83b8
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: e7bd1909-2677-496d-882e-573032107531
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: b690ce3d-3eee-4ce3-b164-5f547f17889b
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: d8b37f20-ba54-470c-9db0-7b5e0981c279
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: e51bc966-2b04-49c0-ab43-aac9b6ceb623
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 9931b562-885a-46a1-a68e-3eb8d4a5858a
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: b76e3ce9-168c-44a0-8d52-58991d99c902
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: c2bd3b1a-d0bb-40e1-bc58-72c3fa21547c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 66919fe4-e1d5-4328-bc59-22b2d8376b0d
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            db113763cef73af887fa21ec4535d5d3~0: 6baf2978-705d-4603-bf8f-9c840d1cd288:Materials/Floor Tiles
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 4db85b7f-1750-4a89-865d-695bd743f933
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: bba9f08f-84d2-405b-a96d-0f717c3ed546
+                Name: Start Position
+                Components:
+                    3d6cfbbdecd1c7854077fa16b178a974: !TransformComponent
+                        Id: 7bf1cec5-24c3-465e-af30-7c37986b5140
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: c0016612-51e2-44f3-9a6e-18e8cb632df1
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: edbe8ac5-e4f1-4eca-a471-100742f2df2f
+                        Position*: {X: 0.0, Y: 10.0, Z: 16.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 76732fdc-0c16-441b-8b7a-5c9d8e55485e
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: c2509f59-bba9-4e29-8e03-73779180318a
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: c3810bfa-2d8d-446b-97db-036a5b3900db
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 409e9224-9407-44fc-b071-7d65a56087a5
+                        Position: {X: -5.0566087, Y: 6.2814274, Z: 4.5959516}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 2e061456-1b05-410d-ba71-60ee74a1f492
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: d182c09b-505b-4c9f-aab1-4a0bf85e1c49
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: c46f9ffa-3c39-46e5-b162-541a29ef7cb6
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: db87bf28-ff2c-4965-8714-56428b27da8b
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: 11507d24-bf4a-4296-af9f-d3221e8b2072
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: 7a2cc63f-fdde-4096-b2e0-d496b5dc7b2b
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: 75b20e1b-9805-446c-8708-3468c67e25e9
+                        trigger: ref!! 7a2cc63f-fdde-4096-b2e0-d496b5dc7b2b
+                        teleportRoom*: ref!! f1067cff-cc4c-4730-97fb-d3fbc4607a7c
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: cd38e0d0-8d28-48eb-922c-e8980b429249
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 34a8a7ba-5f18-4982-9d22-645a23719c99
+                        Position: {X: 0.0, Y: 10.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 05569e13-6e87-4228-91a7-bb1a25a9b8da
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 27c53b36-a5db-4afa-850a-5c805e962bc6
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: ce967802-63ae-4b02-bc60-52d2bc525d42
+                Name: Camera Axis X
+                Components:
+                    669faec5d850940a2beb08351b2c6392: !TransformComponent
+                        Id: 5f2a0426-9ec3-4aca-829f-a9b495706d53
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            e93c7fe337d636cf7c76812e744d361a: ref!! 80f624d2-fced-4efd-bb04-aeeacac85e49
+        -   Folder: null
+            Entity:
+                Id: cf7c60a4-b234-49be-a06a-8d0d8ead9b25
+                Name*: S4
+                Components:
+                    ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
+                        Id: 60014183-7edd-4380-815d-637f0c718266
+                        Position*: {X: 157.07207, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c30adbe3de6f4e74993c3d6fac0053b6: ref!! ff9ca00b-088a-42c2-8e2e-e1a402e500ca
+                            eb77931cdde337acbf9c9fe59d8dbff5: ref!! 240b5837-8e0b-4141-814f-a1eecb9b611e
+                            cced41135b2a924382c27f50e4b6633b: ref!! 4a9b33cc-2bf0-4b98-b328-8492d6230bd2
+                            e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 08c4c7b9-6523-413c-a1a9-fbf70c2d8850
+                            d1075401a81238639c2a4724da6639fb: ref!! 9212f244-571a-44d2-946a-302e93155805
+                            cc1051bf8854a636d214b1106aeef44b: ref!! 13b86d2c-a7d9-4f4f-a157-75edf7797956
+                            5a15efb02a56a49b44d4ae2190578812: ref!! e6c470cd-555e-4755-aa39-f56876e94361
+                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! 3b185857-7902-4769-8d53-e8adce8e2c13
+                            55d20452fcd387fe3149fce2d558f076: ref!! 34a8a7ba-5f18-4982-9d22-645a23719c99
+                            09200679dce470015374a30d4c2f5479: ref!! 67a97fe9-3e59-448b-9ed7-35a04ce128fc
+                            f72b79e81be339f507a865e3d01eebb6: ref!! 3f71f623-df13-4479-baec-4d2cb03ab35d
+                            fb306c7574a09261cb94c6acddbaefd5: ref!! 43c9fb9a-cf72-40c8-8b8f-25736b7a31b3
+                            c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! e1dbdba7-0da0-4818-bbb0-4bfbcf5a2921
+                            761038817211a1e05101c6c2a4bb11bc: ref!! c2bd3b1a-d0bb-40e1-bc58-72c3fa21547c
+                            1d7a9d916fdb51f866a67e6553540bf9: ref!! 16f94807-03a7-4b40-88dd-1e5f207e250c
+                    b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
+                        Id: c4146a79-8914-411e-8cf9-5d82f7079048
+                        startPoint: ref!! 16f94807-03a7-4b40-88dd-1e5f207e250c
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c004d39d-5a8c-462f-84f7-e7f4d8c35a1b
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: d09df44f-1eb3-4684-ae9d-a3f0481a3ef7
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: b242e043-f78f-4ce6-8067-b15aa87b5480
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 851339db-d636-4345-bfcd-d2052d25c772
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 0.8
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: d1198e7f-ac40-4f40-9d70-7eac3c98fc59
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 29efa0ed-6350-4fa9-9994-c80c49a78836
+                        Position: {X: 0.0, Y: 10.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 32fd1e67-d25e-4dee-bec2-086770205fbf
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 794edec0-c7f8-48dd-87fa-02d607bcb09c
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: d267d068-1e5c-46df-9833-c213407a2db9
+                Name: Pause
+                Components:
+                    1726b809f749490bcbd3bf467d769788: !TransformComponent
+                        Id: bb671569-dc23-4e40-a501-fa6d6d3841b4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    369cef653f408a50c15fbc9454d91576: !LudumDare54.UI.PauseMenu,LudumDare54
+                        Id: 1728105e-24d8-4691-89a0-a1e0f07e1e89
+                        activeByDefault: false
+                        uiPriority: -2
+                        Active: false
+        -   Entity:
+                Id: d2d60c1b-6ff2-4eb0-9c51-91f153ffd1fc
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: fc6a386e-5845-48be-bc7b-3c6795c7125b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 183d1e29-b842-4c8d-a6f0-0e37ee76bc66
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            db113763cef73af887fa21ec4535d5d3~0: 6baf2978-705d-4603-bf8f-9c840d1cd288:Materials/Floor Tiles
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 5ec44476-d25a-40f3-a804-38dc197db458
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: d355bf31-5483-4144-890e-1862f8fa3d1e
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 08c4c7b9-6523-413c-a1a9-fbf70c2d8850
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 79dd9baa-b473-4ae7-b586-f80a69f1c630
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 9931b562-885a-46a1-a68e-3eb8d4a5858a
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: d3f82870-24ec-473e-a1ea-fe12ae89e727
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 5f7fee14-ceee-42f0-9686-53c6d0695a8f
+                        Position: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: d19c3811-8083-499d-9981-fcb8a632e8d0
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Folder: null
+            Entity:
+                Id: d536c6d9-a3ba-4139-90b2-bb84645e85d9
+                Name*: S5
+                Components:
+                    ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
+                        Id: 72fde3b6-12b8-4607-9ea7-dc8033d873af
+                        Position*: {X: 210.91425, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c30adbe3de6f4e74993c3d6fac0053b6: ref!! c52b1f96-0d57-45e3-a32d-1c0920ad707c
+                            eb77931cdde337acbf9c9fe59d8dbff5: ref!! f0fe4e33-bbb5-4c1a-831c-8232ddb1b488
+                            cced41135b2a924382c27f50e4b6633b: ref!! 30528991-765b-4435-9d8c-b6220c7dd1e4
+                            e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 84aff0db-9145-44fc-99ad-33a4f33dd436
+                            d1075401a81238639c2a4724da6639fb: ref!! 409e9224-9407-44fc-b071-7d65a56087a5
+                            cc1051bf8854a636d214b1106aeef44b: ref!! 5079c38e-e62e-4527-afb0-e151e42f657e
+                            5a15efb02a56a49b44d4ae2190578812: ref!! 6e82b292-f9eb-4875-b0e4-28a07f0e3ce6
+                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! 4530192b-bad3-4e49-891b-2ec6ff11ee9f
+                            55d20452fcd387fe3149fce2d558f076: ref!! 634ae670-4120-42f9-a97c-bcfe358f8746
+                            09200679dce470015374a30d4c2f5479: ref!! b8eb6a91-4809-4173-8feb-7cd69755db16
+                            f72b79e81be339f507a865e3d01eebb6: ref!! eac23bd6-c53a-4c81-8565-05c996fc060d
+                            fb306c7574a09261cb94c6acddbaefd5: ref!! f8db7da5-3724-42ac-a834-03c4a71a9cf8
+                            c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! 553e7d87-0792-4a06-904e-3bf85281323e
+                            761038817211a1e05101c6c2a4bb11bc: ref!! f55d7231-8535-4aa5-a91b-63c0af4709e8
+                            1d7a9d916fdb51f866a67e6553540bf9: ref!! 727a6a30-0316-44b4-958b-ef4e44e91f7b
+                    b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
+                        Id: a344fe07-1635-4d13-8417-61664e749044
+                        startPoint: ref!! 727a6a30-0316-44b4-958b-ef4e44e91f7b
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c004d39d-5a8c-462f-84f7-e7f4d8c35a1b
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: d635cf6b-aab3-4368-b3cc-056e8c5cbbd6
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 128a1274-cf8e-42f5-9a23-f0f7affbf963
+                        Position: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: bbde4bd2-918b-4bb3-b192-77ff2269c0bc
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: d6f44857-bf27-41a6-af44-e43afd38cca3
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 793e4611-02b3-47aa-8941-e70e3594db78
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: d059bd1d-b75d-4c05-b8f7-cdd4479d6c2f
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: d9c5e5ad-05cd-4fe4-b64e-b8ca31b379ca
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 553e7d87-0792-4a06-904e-3bf85281323e
+                        Position: {X: -10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: cfc47b90-4817-4abe-8821-8d77d8d7d7f1
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 5b49744a-6dde-4990-8677-fcd5f00adca8
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: dd1b8fcb-ef37-4dee-a2bb-4f1d2d44ff96
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 680d6ed8-fa10-4f90-a335-708c23b19c73
+                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 932f5d4e-8af6-4ded-b078-3b0bd65bac4b
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            1d72d092e6ae4ed287dd0c24fb766312~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 8e8ad2a5-e3cf-4ba6-859e-a34b2041c800
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: de8e3722-1d57-4e59-b253-42627e321cd1
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 240b5837-8e0b-4141-814f-a1eecb9b611e
+                        Position: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: c063a9ce-80a1-4654-8691-7afbdea3f3ed
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: df19352c-7674-4775-82b5-3c65d2791ae8
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 9efaa757-b215-4bcb-bde2-6557d55700c8
+                        Position: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 7c50cfa7-5dd6-4ef0-98ef-6e7753b1e435
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: dfb83a93-27af-49fa-9911-ef830c07c894
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: f0fe4e33-bbb5-4c1a-831c-8232ddb1b488
+                        Position: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 6bca845c-fb07-462f-8bca-2ca976333860
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: e05860e0-e6a8-4835-8345-5d71d69e6b3f
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 634ae670-4120-42f9-a97c-bcfe358f8746
+                        Position: {X: 0.0, Y: 10.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 918f5be8-080d-41b5-b378-6bfa22c51b63
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 884c2718-0d5a-4428-adb4-e6594dc1cb40
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: e1ff787d-a162-4dff-8e98-19d60beddfc4
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: d7d26b11-89c4-403a-be05-530d596db69b
+                        Position: {X: -5.0566087, Y: 6.2814274, Z: 4.5959516}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: e69e5073-1926-4994-a288-26cc667d29c1
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: d182c09b-505b-4c9f-aab1-4a0bf85e1c49
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: e233ede8-63e7-4a24-9fc6-41a434c3d0da
+                Name: Start Position
+                Components:
+                    3d6cfbbdecd1c7854077fa16b178a974: !TransformComponent
+                        Id: a87ca900-e87e-4280-883e-85ff9b49a3ae
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Folder: null
+            Entity:
+                Id: e4f83906-a6d2-483b-9d27-cc919fa00161
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: fae29adf-eb67-47b1-8d7f-9ad99fe53a08
+                        Position*: {X: 0.0, Y: 1.75, Z: 15.99}
+                        Rotation*: {X: -3.090862E-08, Y: 0.70710677, Z: -0.70710677, W: -3.090862E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: 21950301-df5f-44b2-b594-c542364e3f61
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: a0166662-09bd-4768-941f-743665620480
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: 0b2943d2-bfd9-46da-bea2-753c49366454
+                        trigger: ref!! a0166662-09bd-4768-941f-743665620480
+                        teleportRoom*: ref!! d5216f36-c865-4953-b090-967da18a21b9
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: d70faa87-29b5-465a-8cda-21c697b7193f
+        -   Entity:
+                Id: e5f6cf92-a1eb-4c20-9f41-a9916535cd9a
+                Name: Start Position
+                Components:
+                    3d6cfbbdecd1c7854077fa16b178a974: !TransformComponent
+                        Id: 75a3d581-9ffe-4d54-bc0f-54bd38ef4271
+                        Position: {X: 0.0, Y: 0.0, Z: 9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: e822f8cd-e8c3-4734-8aa5-7934e213f810
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 0fd3eadf-6f3f-411e-8089-161bcd6da695
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 4e503e1a-e574-4194-85a8-9442f6e2b36c
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 9931b562-885a-46a1-a68e-3eb8d4a5858a
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: e91e707f-b2bd-4080-8486-15f08700518f
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 84950f9e-27ce-4bc0-9a63-98aa2b36ce11
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 214a5ba2-43bf-4fa8-94e6-66e51536251b
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 9931b562-885a-46a1-a68e-3eb8d4a5858a
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: ea03a152-758c-42fe-89af-beefacbb4dd1
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 3b3e6ed1-59b1-4b85-accf-99b75b2d5fb9
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: e4fd0134-9825-4f67-950f-4c39caccb905
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: ea56e009-b8b6-4f00-836e-073b78dcab43
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 0cd2b367-eb60-4bac-b63a-d001862b6fcb
+                        Position: {X: 0.0, Y: 10.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 3f16ea4b-ac22-4be0-810e-616c3e2ac6e5
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 206e4070-03f7-4d7f-9693-7e369f3149ef
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: eb841715-ac16-442b-8f7a-c84690c5affa
+                Name*: S1
+                Components:
+                    ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
+                        Id: b4f53dab-7d48-4c30-a2af-8f7ee5e18c1c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c30adbe3de6f4e74993c3d6fac0053b6: ref!! db87bf28-ff2c-4965-8714-56428b27da8b
+                            eb77931cdde337acbf9c9fe59d8dbff5: ref!! 9efaa757-b215-4bcb-bde2-6557d55700c8
+                            cced41135b2a924382c27f50e4b6633b: ref!! 8864b307-5b20-4e74-9f6c-44fd281d7d13
+                            e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 0fd3eadf-6f3f-411e-8089-161bcd6da695
+                            d1075401a81238639c2a4724da6639fb: ref!! d7d26b11-89c4-403a-be05-530d596db69b
+                            cc1051bf8854a636d214b1106aeef44b: ref!! b242e043-f78f-4ce6-8067-b15aa87b5480
+                            5a15efb02a56a49b44d4ae2190578812: ref!! 6c3b7fbd-aafb-4fe0-9961-4f412855887f
+                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! 054dc28c-d4a6-45ba-afd8-b4492b5cd451
+                            55d20452fcd387fe3149fce2d558f076: ref!! 6acc7fed-5ca4-4eb4-823d-6d922cf67f80
+                            09200679dce470015374a30d4c2f5479: ref!! c26f5438-496b-4b13-9417-f994c779e4b5
+                            f72b79e81be339f507a865e3d01eebb6: ref!! 316ce5cb-5d90-4ded-b6b3-1ca372d11033
+                            fb306c7574a09261cb94c6acddbaefd5: ref!! 0b48e230-bebc-48aa-bd51-ac6d0bc671db
+                            c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! be2595a3-2f59-4985-a541-96e64ea83e55
+                            761038817211a1e05101c6c2a4bb11bc: ref!! 81b10902-425f-4fc3-b05e-45eb20227a2d
+                            1d7a9d916fdb51f866a67e6553540bf9: ref!! 75a3d581-9ffe-4d54-bc0f-54bd38ef4271
+                    b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
+                        Id: bca4c086-54d5-4470-936f-de20c0347f12
+                        startPoint: ref!! 75a3d581-9ffe-4d54-bc0f-54bd38ef4271
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c004d39d-5a8c-462f-84f7-e7f4d8c35a1b
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Folder: null
+            Entity:
+                Id: edd14b0e-0664-4c2e-b834-d8701ec78b78
+                Name*: S3
+                Components:
+                    ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
+                        Id: 1c473099-9b25-4c2c-bd47-32f79339ca97
+                        Position*: {X: 100.59344, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c30adbe3de6f4e74993c3d6fac0053b6: ref!! 514261a8-e86e-42f1-a803-384de8d1c405
+                            1a04671681b9491c2f28467155446b22: ref!! fae29adf-eb67-47b1-8d7f-9ad99fe53a08
+                            eb77931cdde337acbf9c9fe59d8dbff5: ref!! 128a1274-cf8e-42f5-9a23-f0f7affbf963
+                            cced41135b2a924382c27f50e4b6633b: ref!! 2fced7f6-aeca-42ea-989a-a1094aaab3de
+                            e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 84950f9e-27ce-4bc0-9a63-98aa2b36ce11
+                            d1075401a81238639c2a4724da6639fb: ref!! 36380575-42de-46a8-b6a0-894beab223e4
+                            cc1051bf8854a636d214b1106aeef44b: ref!! 2f95f18a-ec7a-45f6-9517-58f70dc66d5e
+                            5a15efb02a56a49b44d4ae2190578812: ref!! 31cf1779-de1b-424e-90d0-fe58cdfbf2df
+                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! f872e939-edad-426f-82a7-37784273baa1
+                            55d20452fcd387fe3149fce2d558f076: ref!! 15b79211-408f-496e-aa36-3539726e5219
+                            09200679dce470015374a30d4c2f5479: ref!! edbe8ac5-e4f1-4eca-a471-100742f2df2f
+                            f72b79e81be339f507a865e3d01eebb6: ref!! f132a5f6-9140-44ae-84f8-b67caab45714
+                            fb306c7574a09261cb94c6acddbaefd5: ref!! 154f4e18-03ab-4280-be49-ba6b1b858ced
+                            c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! baa180c7-586a-4ade-9817-b60bd5da2000
+                            761038817211a1e05101c6c2a4bb11bc: ref!! fc6a386e-5845-48be-bc7b-3c6795c7125b
+                            1d7a9d916fdb51f866a67e6553540bf9: ref!! 7bf1cec5-24c3-465e-af30-7c37986b5140
+                    b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
+                        Id: 71889e4e-3049-4b19-8d28-0a06f9ede0cd
+                        startPoint: ref!! 7bf1cec5-24c3-465e-af30-7c37986b5140
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c004d39d-5a8c-462f-84f7-e7f4d8c35a1b
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: ee14a7d1-6ce7-48db-bf1a-d7e87151e3ac
+                Name*: E1
+                Components:
+                    ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
+                        Id: a262dd54-276e-4d56-a870-08184846b9d4
+                        Position*: {X: 101.81284, Y: 0.0, Z: 53.70273}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c30adbe3de6f4e74993c3d6fac0053b6: ref!! 2a6859cf-05e0-4d58-bec4-950258bc45f4
+                            eb77931cdde337acbf9c9fe59d8dbff5: ref!! 5f7fee14-ceee-42f0-9686-53c6d0695a8f
+                            cced41135b2a924382c27f50e4b6633b: ref!! 1b157510-34d6-4d0c-b341-4d229188e005
+                            e40f80e2df9749a1f8dd3b97c675c9a3: ref!! d8b37f20-ba54-470c-9db0-7b5e0981c279
+                            d1075401a81238639c2a4724da6639fb: ref!! e22f9d44-73c7-4255-98ab-777b68f88b7d
+                            cc1051bf8854a636d214b1106aeef44b: ref!! 91641296-73bc-4c8b-b129-90dba7371664
+                            5a15efb02a56a49b44d4ae2190578812: ref!! 3b3e6ed1-59b1-4b85-accf-99b75b2d5fb9
+                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! dae97aaa-2621-476b-b791-720d3508ac9a
+                            55d20452fcd387fe3149fce2d558f076: ref!! 4a2304cc-c308-4aef-962b-afbf1f5a399b
+                            09200679dce470015374a30d4c2f5479: ref!! 29efa0ed-6350-4fa9-9994-c80c49a78836
+                            f72b79e81be339f507a865e3d01eebb6: ref!! 680d6ed8-fa10-4f90-a335-708c23b19c73
+                            fb306c7574a09261cb94c6acddbaefd5: ref!! 9a49292e-c286-41ed-9f24-1203267619f5
+                            c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! 919f375d-663a-4f7c-b739-015854595897
+                            761038817211a1e05101c6c2a4bb11bc: ref!! 461880ae-c1d4-4c55-8621-4ee5ab56dbff
+                            1d7a9d916fdb51f866a67e6553540bf9: ref!! 29de5285-2871-4be8-95c0-f7769143a7ab
+                    b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
+                        Id: d5216f36-c865-4953-b090-967da18a21b9
+                        startPoint: ref!! 29de5285-2871-4be8-95c0-f7769143a7ab
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c004d39d-5a8c-462f-84f7-e7f4d8c35a1b
+                InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
+        -   Entity:
+                Id: ef8b5770-39e7-42a4-9511-4a91ad657908
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: 51f1d53a-21e0-4660-aa9a-956119e9cb02
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: 31f69001-6cc7-49e9-940a-b3fb27e4aee0
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: cf7668d6-de5d-4671-9910-a1a5854d8e39
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: 75d160fe-4ff8-4d32-99a8-9b6ec139742d
+                        trigger: ref!! cf7668d6-de5d-4671-9910-a1a5854d8e39
+                        teleportRoom*: ref!! 71889e4e-3049-4b19-8d28-0a06f9ede0cd
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: f0044bc5-41a6-487e-b1ab-a24ef6023b0b
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: 4a9b33cc-2bf0-4b98-b328-8492d6230bd2
+                        Position: {X: 4.6166973, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 0a3c72e3-eb07-4e4f-af25-0f25b48a2534
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 200.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
+                InstanceId: 46ebed58-2564-4acc-9fc8-a7152d5bfc04
+        -   Entity:
+                Id: f0279944-c342-44c7-ba0c-fde953779df5
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 0b48e230-bebc-48aa-bd51-ac6d0bc671db
+                        Position: {X: 10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: dbaeb4c0-68f1-4e35-b92c-66c1cbe90c95
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 1b6318e0-39e3-465c-b6ea-e552a6a1fa2f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: f1e97af3-fb21-4013-a869-0025e4894a73
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 81b10902-425f-4fc3-b05e-45eb20227a2d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: fa00ab78-a2af-493d-9773-fb3e4e01e6d0
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            db113763cef73af887fa21ec4535d5d3~0: 6baf2978-705d-4603-bf8f-9c840d1cd288:Materials/Floor Tiles
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 692d52a1-b57f-4256-a8c7-35fd85c8308e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
+                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Entity:
+                Id: f99960ea-09ac-4132-852c-5da3c03b749d
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: f872e939-edad-426f-82a7-37784273baa1
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: aa12e215-6b4a-4e01-b170-0bc84189b0ab
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 4.0
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: e7bd1909-2677-496d-882e-573032107531
+                InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
+        -   Entity:
+                Id: fb79101c-23f4-4aa9-9982-77291e4cfd52
+                Name: Directional light
+                Components:
+                    4c333951764094a8c646eb26b923184f: !TransformComponent
+                        Id: 5079c38e-e62e-4527-afb0-e151e42f657e
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    273c580d823e3ca6209c208a56324c3a: !LightComponent
+                        Id: 64f3da99-af14-4c32-9af1-ceb2a08ef0e9
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 0.8
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
+                InstanceId: 8a2c6a48-2bb9-46ae-9ac6-c72a0227844b
+        -   Entity:
+                Id: fd43191e-5a79-4bf9-9c41-1acad1ce75c0
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: b6be7fba-63d2-47af-9f08-89ba81c8fae7
+                        Position: {X: -10.0, Y: 10.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 02d0413e-26c0-427f-84de-bd816f0de24a
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 0c30a277-9738-48d5-a31c-6325ab64248d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
