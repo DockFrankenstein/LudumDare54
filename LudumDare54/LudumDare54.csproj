@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net6.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Myra.Stride" Version="1.4.5" />
+    <PackageReference Include="Stride.Engine" Version="4.1.0.1898" />
+    <PackageReference Include="Stride.Video" Version="4.1.0.1898" />
+    <PackageReference Include="Stride.Physics" Version="4.1.0.1898" />
+    <PackageReference Include="Stride.Navigation" Version="4.1.0.1898" />
+    <PackageReference Include="Stride.Particles" Version="4.1.0.1898" />
+    <PackageReference Include="Stride.UI" Version="4.1.0.1898" />
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.1.0.1898" IncludeAssets="build;buildTransitive" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\qASIC.Core\qASIC.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Resources\Spartan-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-ExtraLight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Spartan-Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

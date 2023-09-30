@@ -1,0 +1,14 @@
+!HeightmapAsset
+Id: e6119a3b-b71e-43fb-932a-c9d751a63aa2
+SerializedVersion: {Stride: 3.0.0.0}
+Tags: []
+Source: !file ../../../../../Textures/WhiteStuccoWall02/WhiteStuccoWall02_4K_Height.png
+HeightConversionParameters: !Stride.Assets.Physics.FloatHeightmapHeightConversionParamters,Stride.Assets
+    HeightRange: {X: -10.0, Y: 10.0}
+Resize:
+    Enabled: false
+    Size: {X: 1024, Y: 1024}
+ScaleToHeightRange: true
+FloatingPointComponentRange: {X: -1.0, Y: 1.0}
+IsSymmetricShortComponent: false
+sRGB sampling: false

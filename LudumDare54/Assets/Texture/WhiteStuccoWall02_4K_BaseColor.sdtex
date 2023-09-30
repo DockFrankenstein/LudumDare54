@@ -1,0 +1,7 @@
+!Texture
+Id: 9b3c2d8b-28d9-4a3f-9aa4-3774c8d4dc01
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Textures/WhiteStuccoWall02/WhiteStuccoWall02_4K_BaseColor.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

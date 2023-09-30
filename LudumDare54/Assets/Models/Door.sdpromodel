@@ -1,0 +1,13 @@
+!ProceduralModelAsset
+Id: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !PlaneProceduralModel
+    Size: {X: 2.0, Y: 3.5}
+    Tessellation: {X: 1, Y: 1}
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: f5f51380-3402-468e-90a2-e6acaf56de7b:Materials/Door

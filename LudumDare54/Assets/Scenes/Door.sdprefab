@@ -1,0 +1,42 @@
+!PrefabAsset
+Id: 771c75ec-513f-4239-b0ee-d8b7572f0a1b
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 10bc4e35-15ed-44a9-9f54-efb302bcfd41
+    Parts:
+        -   Entity:
+                Id: 10bc4e35-15ed-44a9-9f54-efb302bcfd41
+                Name: Door
+                Components:
+                    d9f6321795ae13454f181c1046726ccd: !TransformComponent
+                        Id: de8eeccd-f1d6-4640-bb6a-4865619cf053
+                        Position: {X: 0.0, Y: 1.75, Z: -9.99}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d949f4d6b47ffe291bda046d228d771: !ModelComponent
+                        Id: fd8ce037-e278-4793-ad08-e5d475a197a9
+                        Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
+                        Materials: {}
+                    3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
+                        Id: 5ab31dd4-a07e-4a1d-9f0a-aac7089cec6b
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
+                        Id: aeabe4a0-339e-4d77-bf56-76a99b755143
+                        trigger: ref!! 5ab31dd4-a07e-4a1d-9f0a-aac7089cec6b
+                        teleportPoint: null

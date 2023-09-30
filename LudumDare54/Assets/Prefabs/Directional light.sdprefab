@@ -1,0 +1,32 @@
+!PrefabAsset
+Id: e7217fa5-6512-4aad-9941-30ef0d2791e0
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 67e62c64-5333-42c2-aa0e-7530f65f263f
+    Parts:
+        -   Entity:
+                Id: 67e62c64-5333-42c2-aa0e-7530f65f263f
+                Name: Directional light
+                Components:
+                    41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
+                        Id: d73e9b56-064a-48b8-bc8b-11a5f096f909
+                        Position: {X: 0.0, Y: 6.2814274, Z: 0.0}
+                        Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c11992dbf47b3d02bc2080a200913894: !LightComponent
+                        Id: 433e3a48-4582-43b8-be0d-266caacd298b
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 20.0
+                            AngleInner: 62.1
+                            AngleOuter: 83.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0

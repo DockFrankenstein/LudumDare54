@@ -1,0 +1,6 @@
+!Texture
+Id: 19586681-d4c6-45da-ac5b-57e3fbcc14fd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Textures/StoneTilesFloor01/StoneTilesFloor01_4K_Normal.png
+Type: !NormalMapTextureType {}

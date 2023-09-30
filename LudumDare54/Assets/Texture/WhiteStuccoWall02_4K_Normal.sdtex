@@ -1,0 +1,6 @@
+!Texture
+Id: ab8f1a7b-c386-448f-b005-11d37aec3afb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Textures/WhiteStuccoWall02/WhiteStuccoWall02_4K_Normal.png
+Type: !NormalMapTextureType {}

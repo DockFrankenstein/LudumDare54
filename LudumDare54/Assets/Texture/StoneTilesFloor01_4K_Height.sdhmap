@@ -1,0 +1,14 @@
+!HeightmapAsset
+Id: 882bf101-89e0-43e0-85c0-ed167a1b11e0
+SerializedVersion: {Stride: 3.0.0.0}
+Tags: []
+Source: !file ../../../../../Textures/StoneTilesFloor01/StoneTilesFloor01_4K_Height.png
+HeightConversionParameters: !Stride.Assets.Physics.FloatHeightmapHeightConversionParamters,Stride.Assets
+    HeightRange: {X: -10.0, Y: 10.0}
+Resize:
+    Enabled: false
+    Size: {X: 1024, Y: 1024}
+ScaleToHeightRange: true
+FloatingPointComponentRange: {X: -1.0, Y: 1.0}
+IsSymmetricShortComponent: false
+sRGB sampling: false
