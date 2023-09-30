@@ -50,7 +50,7 @@ namespace LudumDare54.UI
 
             int i = ActiveCanvases.Count - 1;
             for (; i >= 0; i--)
-                if (ActiveCanvases[i].uiPriority > canvas.uiPriority)
+                if (ActiveCanvases[i].uiPriority < canvas.uiPriority)
                     break;
 
             ActiveCanvases.Insert(i + 1, canvas);
