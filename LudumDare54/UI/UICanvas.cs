@@ -34,6 +34,8 @@ namespace LudumDare54.UI
 
                         break;
                 }
+
+                OnChangeState(value);
             }
         }
 
@@ -75,6 +77,11 @@ namespace LudumDare54.UI
         public abstract void InitializeUI();
 
         public virtual void OnDrawUI()
+        {
+
+        }
+
+        public virtual void OnChangeState(bool isActive)
         {
 
         }

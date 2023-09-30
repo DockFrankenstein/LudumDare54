@@ -19,6 +19,8 @@ namespace LudumDare54
             MyraEnvironment.Game = this;
             UI.MyraRenderer.InitializeFonts();
 
+            CursorManager.Game = this;
+
             base.Initialize();
 
             QasicInstance.Start();

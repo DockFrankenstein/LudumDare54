@@ -16,6 +16,7 @@ namespace LudumDare54.UI
     public class PauseMenu : UICanvas
     {
         public const float FADE_OPACITY = 0.5f;
+        public const string CURSOR_STATE_NAME = "pause";
 
         public override void Start()
         {
@@ -26,6 +27,11 @@ namespace LudumDare54.UI
         {
             if (Input.HasKeyboard && Input.IsKeyPressed(Keys.Escape))
                 Active = !Active;
+        }
+
+        public override void OnChangeState(bool isActive)
+        {
+            CursorManager.ChangeState(CURSOR_STATE_NAME, isActive);
         }
 
         public override void InitializeUI()

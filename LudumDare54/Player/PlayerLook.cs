@@ -16,7 +16,12 @@ namespace LudumDare54.Player
 
         public override void Start()
         {
-            
+            CursorManager.GlobalState = false;
+        }
+
+        public override void Cancel()
+        {
+            CursorManager.GlobalState = true;
         }
 
         public override void Update()
