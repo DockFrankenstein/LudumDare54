@@ -2,6 +2,8 @@
 using qASIC;
 using Stride.Core.Diagnostics;
 using Myra;
+using Myra.Graphics2D.UI.Styles;
+using LudumDare54.UI;
 
 namespace LudumDare54
 {
@@ -19,7 +21,7 @@ namespace LudumDare54
             QasicInstance = new qInstance();
 
             MyraEnvironment.Game = this;
-            UI.MyraRenderer.InitializeFonts();
+            MyraRenderer.InitializeFonts();
 
             CursorManager.Game = this;
 

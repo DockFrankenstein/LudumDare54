@@ -2206,7 +2206,8 @@ Hierarchy:
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
+                        Children:
+                            59d7b93d2a6750facdbca32fde2cf6ca: ref!! a437c84f-6d38-4a06-8cea-b68eff2579d2
                     369cef653f408a50c15fbc9454d91576: !LudumDare54.UI.PauseMenu,LudumDare54
                         Id: 1728105e-24d8-4691-89a0-a1e0f07e1e89
                         activeByDefault: false
@@ -2932,6 +2933,22 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
                 InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: efd7de2e-027c-4222-b743-6bd88c782540
+                Name: Credits
+                Components:
+                    a8af60219b04685d7fadd221504e3153: !TransformComponent
+                        Id: a437c84f-6d38-4a06-8cea-b68eff2579d2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    66c38a3e78c1c12d4cf95ee49010d730: !LudumDare54.UI.CreditsUI,LudumDare54
+                        Id: 1745067f-9ba4-4d1d-aa7a-29d6bcc13302
+                        activeByDefault: false
+                        uiPriority: 10
+                        Active: false
+                        window: null
         -   Entity:
                 Id: f0044bc5-41a6-487e-b1ab-a24ef6023b0b
                 Name: Directional light
