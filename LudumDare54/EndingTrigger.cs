@@ -2,9 +2,6 @@
 using Stride.Core.Mathematics;
 
 using Myra.Graphics2D.UI;
-using Myra;
-using System.IO;
-using FontStashSharp;
 using System.Collections.Generic;
 using Myra.Graphics2D.Brushes;
 using System;
@@ -79,9 +76,9 @@ namespace LudumDare54
                     Text = item,
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center,
-                    Font = MyraRenderer.Ft_SpartanRegular.GetFont(50),
+                    Font = MyraRenderer.Ft_SpartanRegular.GetFont(24),
                     TextColor = new Color(0),
-                    Height = 50,
+                    Height = 24,
                     GridRow = i,
                 };
 

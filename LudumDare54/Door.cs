@@ -15,7 +15,7 @@ namespace LudumDare54
     public class Door : AsyncScript
     {
         public StaticColliderComponent trigger;
-        public TransformComponent teleportPoint;
+        public Room teleportRoom;
 
         public event Action<PlayerMove> OnPlayerEnter;
 
@@ -34,10 +34,12 @@ namespace LudumDare54
                 if (playerMove == null)
                     continue;
 
-                qDebug.Log("Player has entered a door", "blue");
+                qDebug.Log(teleportRoom == null ?
+                    "Player has entered a door" :
+                    $"Player has entered room {teleportRoom.Entity.Name}", "blue");
 
-                if (teleportPoint != null)
-                    playerMove.Teleport(teleportPoint.WorldMatrix.TranslationVector);
+                if (teleportRoom != null)
+                    playerMove.Teleport(teleportRoom.startPoint.WorldMatrix.TranslationVector);
 
                 OnPlayerEnter?.Invoke(playerMove);
 
