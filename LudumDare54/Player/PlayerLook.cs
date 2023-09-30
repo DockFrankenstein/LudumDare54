@@ -12,8 +12,6 @@ namespace LudumDare54.Player
         public TransformComponent XRotation;
         public TransformComponent YRotation;
 
-        bool _mouseLocked = false;
-
         public override void Start()
         {
             CursorManager.GlobalState = false;
@@ -26,7 +24,7 @@ namespace LudumDare54.Player
 
         public override void Update()
         {
-            _rotation -= Input.MouseDelta;
+            _rotation -= Input.MouseDelta * Game.Window.ClientBounds.Height / 1000f;
 
             _rotation.Y = Math.Clamp(_rotation.Y, -1.5f, 1.5f);
 

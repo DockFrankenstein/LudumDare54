@@ -9,6 +9,8 @@ namespace LudumDare54
     {
         public qInstance QasicInstance { get; private set; }
 
+        public GameSettings GameSettings { get; private set; } = new GameSettings();
+
         protected override void Initialize()
         {
             System.AppDomain.CurrentDomain.ProcessExit += CurrentDomain_ProcessExit;
@@ -23,7 +25,18 @@ namespace LudumDare54
 
             base.Initialize();
 
+            GameSettings = new GameSettings()
+            {
+                Game = this,
+            };
+
             QasicInstance.Start();
+        }
+
+        protected override void BeginRun()
+        {
+            base.BeginRun();
+            GameSettings.Load();
         }
 
         private void GlobalLogger_GlobalMessageLogged(ILogMessage obj)

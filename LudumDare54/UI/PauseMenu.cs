@@ -18,9 +18,18 @@ namespace LudumDare54.UI
         public const float FADE_OPACITY = 0.5f;
         public const string CURSOR_STATE_NAME = "pause";
 
+        GameSettings.GameSettingsData settingsData = new GameSettings.GameSettingsData();
+        GameSettings settings;
+
+        TextButton applySettingsButton;
+        TextButton discardSettingsButton;
+
+        Window settingsWindow;
+
         public override void Start()
         {
             base.Start();
+            settings = ((CustomGame)Game).GameSettings;
         }
 
         public override void Update()
@@ -59,25 +68,16 @@ namespace LudumDare54.UI
                 Padding = new Myra.Graphics2D.Thickness(0, 10),
             };
 
-            var settingsPanel = new Panel();
-            var settingsWindow = new Window()
-            { 
+            settingsWindow = new Window()
+            {
                 Title = "Settings",
-                Content = settingsPanel,
+                Content = CreateSettingsContent(),
                 MinWidth = 300,
                 MinHeight = 300,
                 Width = 600,
                 Height = 700,
                 TitleFont = MyraRenderer.Ft_SpartanRegular.GetFont(20),
             };
-
-            settingsPanel.Widgets.Add(new Label()
-            {
-                Text = "TODO: Add settings",
-                Font = MyraRenderer.Ft_SpartanRegular.GetFont(40),
-                VerticalAlignment = VerticalAlignment.Center,
-                HorizontalAlignment = HorizontalAlignment.Center,
-            });
 
 
             var buttonGrid = new Grid()
@@ -121,6 +121,15 @@ namespace LudumDare54.UI
             CanvasDesktop.Root = panel;
         }
 
+        public override void OnDrawUI()
+        {
+            bool settingsModified = settingsData != settings.SettingsData;
+            applySettingsButton.Enabled = settingsModified;
+            discardSettingsButton.Enabled = settingsModified;
+
+            base.OnDrawUI();
+        }
+
         private static TextButton CreateButton(string text) =>
             new TextButton()
             {
@@ -138,5 +147,144 @@ namespace LudumDare54.UI
                 OverTextColor = new Color(115, 222, 255),
                 PressedTextColor = new Color(0, 195, 255),
             };
+
+        private Widget CreateSettingsContent()
+        {
+            var outsideGrid = new Grid();
+
+            outsideGrid.RowsProportions.Add(new Proportion(ProportionType.Fill));
+            outsideGrid.RowsProportions.Add(new Proportion());
+            outsideGrid.RowsProportions.Add(new Proportion());
+
+
+            var scroll = new ScrollViewer()
+            {
+                GridRow = 0,
+                Content = CreateSettings(),
+                ShowHorizontalScrollBar = false,
+            };
+
+            outsideGrid.Widgets.Add(scroll);
+
+
+            var buttonGrid = new Grid()
+            {
+                HorizontalAlignment = HorizontalAlignment.Right,
+                GridRow = 2,
+                ColumnSpacing = 8,
+            };
+
+            applySettingsButton = CreateButton("Apply", 0);
+            applySettingsButton.Click += (_, _) =>
+            {
+                settings.SettingsData = settingsData;
+                ((CustomGame)Game).GameSettings.Save();
+                ((CustomGame)Game).GameSettings.LoadSettings();
+
+                settingsWindow.Close();
+            };
+
+            discardSettingsButton = CreateButton("Discard", 1);
+            discardSettingsButton.Click += (_, _) => settingsData = settings.SettingsData;
+            var closeButton = CreateButton("Close", 2);
+            closeButton.Click += (_, _) =>
+            {
+                settingsData = settings.SettingsData;
+                settingsWindow.Close();
+            };
+
+            buttonGrid.Widgets.Add(applySettingsButton);
+            buttonGrid.Widgets.Add(discardSettingsButton);
+            buttonGrid.Widgets.Add(closeButton);
+
+            outsideGrid.Widgets.Add(new HorizontalSeparator() 
+            { 
+                GridRow = 1, 
+                Margin = new Myra.Graphics2D.Thickness(0, 4) 
+            });
+
+            outsideGrid.Widgets.Add(buttonGrid);
+
+            return outsideGrid;
+
+            TextButton CreateButton(string text, int gridColumn = 0) =>
+                new TextButton()
+                {
+                    Text = text,
+                    GridColumn = gridColumn,
+                    Font = MyraRenderer.Ft_SpartanRegular.GetFont(20),
+                    Padding = new Myra.Graphics2D.Thickness(8, 8),
+                    Width = 100,
+                };
+        }
+
+        private Widget CreateSettings()
+        {
+            var grid = new Grid()
+            {
+                VerticalAlignment = VerticalAlignment.Top,
+            };
+
+            grid.ColumnsProportions.Add(new Proportion(ProportionType.Part, 4f));
+            grid.ColumnsProportions.Add(new Proportion(ProportionType.Part, 10f));
+
+            grid.Widgets.Add(CreateSettingsLabel("Fullscreen", 0));
+            grid.Widgets.Add(CreateSettingsLabel("UI Debug", 1));
+
+            var fullscreenToggle = new ComboBox()
+            {
+                GridColumn = 1,
+                GridRow = 0,
+            };
+
+            fullscreenToggle.Items.Add(CreateListItem("True", () => settingsData.fullscreen = true));
+            fullscreenToggle.Items.Add(CreateListItem("False", () => settingsData.fullscreen = false));
+
+            fullscreenToggle.SelectedIndex = settingsData.fullscreen ? 0 : 1;
+
+            grid.Widgets.Add(fullscreenToggle);
+
+            var debugWindow = new DebugOptionsWindow();
+
+            var uiDebugButton = new TextButton()
+            {
+                Text = "Open",
+                Font = MyraRenderer.Ft_SpartanRegular.GetFont(20),
+                GridColumn = 1,
+                GridRow = 1,
+                Padding = new Myra.Graphics2D.Thickness(8, 8),
+            };
+
+            uiDebugButton.Click += (_, _) => debugWindow.ShowModal(CanvasDesktop);
+
+            grid.Widgets.Add(uiDebugButton);
+
+            return grid;
+
+            ListItem CreateListItem(string text, Action onChange)
+            {
+                var item = new ListItem()
+                {
+                    Text = text,
+                };
+
+                item.SelectedChanged += (_, _) =>
+                {
+                    if (item.IsSelected)
+                        onChange?.Invoke();
+                };
+
+                return item;
+            }
+
+            Label CreateSettingsLabel(string text, int gridRow) =>
+                new Label()
+                {
+                    Text = text,
+                    GridRow = gridRow,
+                    GridColumn = 0,
+                    Font = MyraRenderer.Ft_SpartanRegular.GetFont(20),
+                };
+        }
     }
 }

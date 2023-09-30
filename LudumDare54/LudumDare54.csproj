@@ -4,6 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Myra.Stride" Version="1.4.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Stride.Engine" Version="4.1.0.1898" />
     <PackageReference Include="Stride.Video" Version="4.1.0.1898" />
     <PackageReference Include="Stride.Physics" Version="4.1.0.1898" />
