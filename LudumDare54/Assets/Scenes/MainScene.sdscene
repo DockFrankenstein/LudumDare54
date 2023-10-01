@@ -8,6 +8,7 @@ Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
         - ref!! 5384af19-473c-4d6b-9999-db5ac5f9ce0d
+        - ref!! a69bf10a-63d5-483a-8c06-ce93b2611e59
     Parts:
         -   Entity:
                 Id: 5384af19-473c-4d6b-9999-db5ac5f9ce0d
@@ -22,3 +23,18 @@ Hierarchy:
                     cd246a2791d412c346f41b2a835e787c: !LudumDare54.SceneManager,LudumDare54
                         Id: 870458ab-327f-4bfe-beee-2d8a0c297eb1
                         defaultScene: 292dfd88-5050-4fcf-a810-d0045e697625:Scenes/Game
+        -   Entity:
+                Id: a69bf10a-63d5-483a-8c06-ce93b2611e59
+                Name: Fader
+                Components:
+                    ee8ea5d7c41e088e6c1409809e0f3f6b: !TransformComponent
+                        Id: afdc12c0-01f4-4fd9-9dd1-8c22527a32cf
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5447b22aa987e275e951b1008d73bbfe: !LudumDare54.UI.FaderUI,LudumDare54
+                        Id: de45ebc2-dac7-4a5b-aae1-259da6213081
+                        activeByDefault: false
+                        uiPriority: 3
+                        Active: false

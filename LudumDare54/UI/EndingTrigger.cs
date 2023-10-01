@@ -47,6 +47,17 @@ namespace LudumDare54
 
             for (int i = 0; i < _labels.Count; i++)
                 _labels[i].TextColor = new Color(0, 0, 0, (byte)Math.Round(Math.Clamp((time - BACKGROUND_FADE_DURATION - i * TEXT_FADE_DURATION) * 255.0 / TEXT_FADE_DURATION, 0.0, 255.0)));
+        
+            if (time > BACKGROUND_FADE_DURATION - (_labels.Count - 2) * TEXT_FADE_DURATION)
+            {
+                if (Input.HasKeyboard && Input.IsKeyPressed(Stride.Input.Keys.E))
+                {
+                    FaderUI.Instance.Fade(color, 1.0, 1.0, () =>
+                    {
+                        SceneManager.Instance.ReloadScene();
+                    });
+                }
+            }
         }
 
         public override void InitializeUI()
@@ -88,6 +99,22 @@ namespace LudumDare54
             }
 
             _panel.Widgets.Add(grid);
+
+            var continueLabel = new Label()
+            {
+                Text = "Press E to continue",
+                Font = MyraRenderer.Ft_SpartanSemiBold.GetFont(20),
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Bottom,
+                Margin = new Myra.Graphics2D.Thickness(0, 0, 0, 40),
+                TextColor = new Color(0),
+            };
+
+            _labels.Add(continueLabel);
+
+            _panel.Widgets.Add(continueLabel);
+            _panel.Widgets.Add(continueLabel);
+
             CanvasDesktop.Root = _panel;
         }
     }

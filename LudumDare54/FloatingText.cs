@@ -23,6 +23,7 @@ namespace LudumDare54
 
         public override void Update()
         {
+            if (look == null) return;
             look.XRotation.WorldMatrix.DecomposeXYZ(out Vector3 rotation);
             Entity.Transform.RotationEulerXYZ = rotation;
         }

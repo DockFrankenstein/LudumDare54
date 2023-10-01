@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
 using Stride.Physics;
 using LudumDare54.Player;
 using qASIC;
+using LudumDare54.UI;
+
+using Color = Stride.Core.Mathematics.Color;
 
 namespace LudumDare54
 {
     public class Door : AsyncScript
     {
+        public const double TRANSITION_TO_DURATION = 0.4;
+        public const double TRANSITION_FROM_DURATION = 0.5;
+
         public StaticColliderComponent trigger;
         public Room teleportRoom;
+        public Color transitionColor = new Color(255, 255, 255, 255);
 
         public event Action<PlayerMove> OnPlayerEnter;
 
@@ -39,7 +45,12 @@ namespace LudumDare54
                     $"Player has entered room {teleportRoom.Entity.Name}", "blue");
 
                 if (teleportRoom != null)
-                    playerMove.Teleport(teleportRoom.startPoint.WorldMatrix.TranslationVector);
+                {
+                    FaderUI.Instance.Fade(transitionColor, TRANSITION_TO_DURATION, TRANSITION_FROM_DURATION, () =>
+                    {
+                        playerMove.Teleport(teleportRoom.startPoint.WorldMatrix.TranslationVector);
+                    });
+                }
 
                 OnPlayerEnter?.Invoke(playerMove);
 

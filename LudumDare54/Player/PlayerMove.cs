@@ -14,6 +14,8 @@ namespace LudumDare54.Player
 {
     public class PlayerMove : SyncScript
     {
+        [DataMemberIgnore] public bool CanMove { get; set; } = true;
+
         public CharacterComponent character;
         public TransformComponent directionTransform;
 
@@ -54,12 +56,15 @@ namespace LudumDare54.Player
 
             character.SetVelocity(direction * speed);
 
-            if (character.IsGrounded && Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
+            if (CanMove && character.IsGrounded && Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
                 character.Jump(Vector3.UnitY * CurrentAtmosphere.jumpHeight);
         }
 
         Vector2 GetPathInput()
         {
+            if (!CanMove)
+                return Vector2.Zero;
+
             if (!Input.HasKeyboard)
                 return Vector2.Zero;
 
@@ -82,6 +87,7 @@ namespace LudumDare54.Player
 
         public void Teleport(Vector3 targetPosition)
         {
+            character.SetVelocity(Vector3.Zero);
             character.Jump(Vector3.Zero);
             character.Teleport(targetPosition);
             qDebug.Log($"Teleported player to {targetPosition}");

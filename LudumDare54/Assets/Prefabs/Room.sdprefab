@@ -287,13 +287,14 @@ Hierarchy:
                         ColliderShapes:
                             30b4ec47164dfdba57f442d00d19e4fa: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 4.0, Y: 2.0, Z: 3.5}
-                                LocalOffset: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Size: {X: 4.0, Y: 3.0, Z: 3.5}
+                                LocalOffset: {X: 0.0, Y: 1.5, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     af789df6d1aa55f2820b68b1efb43d98: !LudumDare54.Door,LudumDare54
                         Id: 93a9dd8c-53ab-473a-a6bc-b84cac6fdf6a
                         trigger: ref!! 4b17d21e-5c82-4fb7-a71c-7085a8fe474c
                         teleportRoom: null
+                        transitionColor: {R: 255, G: 255, B: 255, A: 255}
             Base:
                 BasePartAsset: 771c75ec-513f-4239-b0ee-d8b7572f0a1b:Prefabs/Door
                 BasePartId: 10bc4e35-15ed-44a9-9f54-efb302bcfd41

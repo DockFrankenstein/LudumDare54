@@ -26,6 +26,9 @@ namespace LudumDare54.Player
 
         public override void Update()
         {
+            if (CursorManager.IsMouseVisible)
+                return;
+
             _rotation -= Input.MouseDelta * Game.Window.ClientBounds.Height / 1000f;
 
             _rotation.Y = Math.Clamp(_rotation.Y, -(float)Math.PI / 2f, (float)Math.PI / 2f);

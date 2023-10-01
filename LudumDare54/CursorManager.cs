@@ -22,6 +22,8 @@ namespace LudumDare54
             }
         }
 
+        public static bool IsMouseVisible => States.Count > 0;
+
         private static List<string> States { get; set; } = new List<string>()
         {
             "global",
