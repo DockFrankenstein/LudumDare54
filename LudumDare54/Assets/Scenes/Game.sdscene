@@ -2326,7 +2326,7 @@ Hierarchy:
                         Id: e2718f1c-4ca2-467c-9c5b-cd290a89adfc
                         Position*: {X: 9.729134E-14, Y: 0.01, Z: -1.1128832E-06}
                         Rotation*: {X: -0.70710677, Y: 0.0, Z: -6.181724E-08, W: 0.70710677}
-                        Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale*: {X: 0.6, Y: 0.6, Z: 0.6}
                         Children: {}
                     c3a48afdce1db7cf4247ae296a428824: !SpriteComponent
                         Id: 34eeb2c7-3d4c-4857-babb-1d4ad350d2d9

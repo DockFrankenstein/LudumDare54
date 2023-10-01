@@ -54,7 +54,7 @@ namespace LudumDare54.Player
 
             character.SetVelocity(direction * speed);
 
-            if (Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
+            if (character.IsGrounded && Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
                 character.Jump(Vector3.UnitY * CurrentAtmosphere.jumpHeight);
         }
 
