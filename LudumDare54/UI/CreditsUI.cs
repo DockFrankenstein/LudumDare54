@@ -22,7 +22,10 @@ namespace LudumDare54.UI
             switch (isActive)
             {
                 case true:
-                    window.ShowModal(CanvasDesktop);
+                    var windowPoint = new Point(Game.Window.ClientBounds.Width * 3 / 4 - (window.Width ?? 0) / 2,
+                        Game.Window.ClientBounds.Height / 2 - (window.Height ?? 0) / 2);
+
+                    window.ShowModal(CanvasDesktop, windowPoint);
                     break;
                 case false:
                     window.Close();
@@ -50,6 +53,11 @@ namespace LudumDare54.UI
                 Width = 500,
                 Height = 600,
                 Title = "Credits",
+            };
+
+            window.Closed += (_, _) =>
+            {
+                Active = false;
             };
 
             for (int i = 0; i < 4; i++)

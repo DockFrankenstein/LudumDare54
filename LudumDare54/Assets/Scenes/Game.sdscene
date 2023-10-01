@@ -2699,6 +2699,22 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 3bdd2bf5-8d60-444a-9377-fd3e1f206ec3
                 InstanceId: 5ae47974-195a-44d1-abe7-13d7af473303
+        -   Entity:
+                Id: 52d253c6-0c09-4efe-9d13-2c0af4123f94
+                Name: Credits
+                Components:
+                    15181305b2b22a8d4cee3dfb6af6cc73: !TransformComponent
+                        Id: 40921f00-3e90-4300-9e7b-a4fa6da8fe84
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    06485ef2518353612e3662a243a411f2: !LudumDare54.UI.CreditsUI,LudumDare54
+                        Id: bbb59208-2059-4bbf-b699-523a71cc109c
+                        activeByDefault: false
+                        uiPriority: 12
+                        Active: false
+                        window: null
         -   Folder: null
             Entity:
                 Id: 532f6abb-4f26-4bf1-8db0-3489d51eb338
@@ -3828,6 +3844,21 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
                 InstanceId: 1cef0887-97a4-4095-8687-466ed3781778
+        -   Entity:
+                Id: 75971f4f-1932-4beb-8fbb-97309ddf5937
+                Name: Settings
+                Components:
+                    15181305b2b22a8d4cee3dfb6af6cc73: !TransformComponent
+                        Id: 3b6f0bba-f9b7-4aa3-83c6-5cf5323a94c5
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    06d6a86dd15d896fbcc275cc1cb48685: !LudumDare54.UI.SettingsUI,LudumDare54
+                        Id: 6dc222d0-ca7b-4277-bc07-d9900dd7f8d8
+                        activeByDefault: false
+                        uiPriority: 11
+                        Active: false
         -   Entity:
                 Id: 76d1a325-f9a6-497e-8917-2a72baedaf18
                 Name: Ground
@@ -6404,12 +6435,15 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            59d7b93d2a6750facdbca32fde2cf6ca: ref!! a437c84f-6d38-4a06-8cea-b68eff2579d2
+                            69671c3aee1079e4ef1975cd43c558e3: ref!! 40921f00-3e90-4300-9e7b-a4fa6da8fe84
+                            f084ebfd4fef5308778065afab3187ba: ref!! 3b6f0bba-f9b7-4aa3-83c6-5cf5323a94c5
                     369cef653f408a50c15fbc9454d91576: !LudumDare54.UI.PauseMenu,LudumDare54
                         Id: 1728105e-24d8-4691-89a0-a1e0f07e1e89
                         activeByDefault: false
                         uiPriority: 10
                         Active: false
+                        credits: ref!! bbb59208-2059-4bbf-b699-523a71cc109c
+                        settings: ref!! 6dc222d0-ca7b-4277-bc07-d9900dd7f8d8
         -   Entity:
                 Id: d2d60c1b-6ff2-4eb0-9c51-91f153ffd1fc
                 Name: Ground
@@ -7629,22 +7663,6 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
                 InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
-        -   Entity:
-                Id: efd7de2e-027c-4222-b743-6bd88c782540
-                Name: Credits
-                Components:
-                    a8af60219b04685d7fadd221504e3153: !TransformComponent
-                        Id: a437c84f-6d38-4a06-8cea-b68eff2579d2
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    66c38a3e78c1c12d4cf95ee49010d730: !LudumDare54.UI.CreditsUI,LudumDare54
-                        Id: 1745067f-9ba4-4d1d-aa7a-29d6bcc13302
-                        activeByDefault: false
-                        uiPriority: 10
-                        Active: false
-                        window: null
         -   Entity:
                 Id: f0044bc5-41a6-487e-b1ab-a24ef6023b0b
                 Name: Directional light

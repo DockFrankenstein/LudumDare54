@@ -26,7 +26,7 @@ namespace LudumDare54.Player
 
         public override void Update()
         {
-            if (CursorManager.IsMouseVisible)
+            if (!Game.Window.Focused || CursorManager.IsMouseVisible)
                 return;
 
             _rotation -= Input.MouseDelta * Game.Window.ClientBounds.Height / 1000f;
