@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net6.0-windows;net6.0</TargetFrameworks>
+    <AssemblyName>LudumDare54</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Myra.Stride" Version="1.4.5" />
