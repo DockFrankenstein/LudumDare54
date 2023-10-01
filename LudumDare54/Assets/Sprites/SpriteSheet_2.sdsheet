@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: e63a2074-6365-4dc6-8ff5-5d6b553a9807
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 255, B: 255, A: 255}
+Packing: {}
+Sprites:
+    be963ba3093f50e05a78eccd3298f64e:
+        Source: !file ../../Resources/Text Images/Text-E1.png
+        Name: Text-E1
+        TextureRegion: {X: 0, Y: 0, Width: 1920, Height: 1080}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

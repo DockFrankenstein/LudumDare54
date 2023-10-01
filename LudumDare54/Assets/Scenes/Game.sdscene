@@ -466,8 +466,8 @@ Hierarchy:
                 Components:
                     ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
                         Id: 096ab914-e10b-4080-9092-9e7693f94b07
-                        Position*: {X: 150.0, Y: 0.0, Z: 200.0}
-                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Position*: {X: 100.0, Y: 0.0, Z: 250.0}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c30adbe3de6f4e74993c3d6fac0053b6: ref!! 24f1045b-8351-472f-9abd-4799abee7dd6
@@ -2319,6 +2319,26 @@ Hierarchy:
                 BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
                 InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
         -   Entity:
+                Id: 66411aa8-7531-45fe-875a-a89917c5a526
+                Name: Floating Text
+                Components:
+                    8794194e27c2c873b293d697a586adda: !TransformComponent
+                        Id: e2718f1c-4ca2-467c-9c5b-cd290a89adfc
+                        Position*: {X: 9.729134E-14, Y: 0.01, Z: -1.1128832E-06}
+                        Rotation*: {X: -0.70710677, Y: 0.0, Z: -6.181724E-08, W: 0.70710677}
+                        Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c3a48afdce1db7cf4247ae296a428824: !SpriteComponent
+                        Id: 34eeb2c7-3d4c-4857-babb-1d4ad350d2d9
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: e63a2074-6365-4dc6-8ff5-5d6b553a9807:Sprites/SpriteSheet_2
+                        Color: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
+                    811baca23d73977a3a8ac0916556b4f7: ~(Deleted)
+            Base:
+                BasePartAsset: 56591022-b330-4ddb-a2c3-3b94ead185e8:Prefabs/Floating Text
+                BasePartId: be53a557-34ba-4af2-a798-4078f4740d87
+                InstanceId: d904bd18-3162-429e-9f5c-84f0fd815a18
+        -   Entity:
                 Id: 66447ca6-1f23-45a5-adbc-9dc5fddb08e4
                 Name: Atmosphere
                 Components:
@@ -3628,7 +3648,7 @@ Hierarchy:
                     ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
                         Id: e723ac4f-4717-4cba-b3db-9a68509b45a0
                         Position*: {X: 100.0, Y: 0.0, Z: 200.0}
-                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c30adbe3de6f4e74993c3d6fac0053b6: ref!! 4cffd611-241d-4c9c-9abb-55ea98bd0fb4
@@ -3763,7 +3783,7 @@ Hierarchy:
                     ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
                         Id: a59f1096-bc63-4bc6-849c-8af4acef877a
                         Position*: {X: 100.0, Y: 0.0, Z: 150.0}
-                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c30adbe3de6f4e74993c3d6fac0053b6: ref!! d0dd6c7c-ca5f-4c7b-9ce5-06996bbc9fe2
@@ -3836,8 +3856,8 @@ Hierarchy:
                 Components:
                     ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
                         Id: fc0aeb07-1403-4625-b094-23de23dc85b8
-                        Position*: {X: 200.0, Y: 0.0, Z: 200.0}
-                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Position*: {X: 100.0, Y: 0.0, Z: 300.0}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             eb77931cdde337acbf9c9fe59d8dbff5: ref!! 36fd0d54-ac62-4340-a83a-f10c3f3ebe33
@@ -4173,7 +4193,7 @@ Hierarchy:
                     ad287ca6bcf6349376ad54e3651ec3bf: !TransformComponent
                         Id: 40e5ea08-b2c8-449b-92ce-462d01f89ac2
                         Position*: {X: 100.0, Y: 0.0, Z: 100.0}
-                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c30adbe3de6f4e74993c3d6fac0053b6: ref!! be3b1a34-2c1f-4c3a-a8f6-fea26eb194df
@@ -5426,6 +5446,7 @@ Hierarchy:
                             c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! 919f375d-663a-4f7c-b739-015854595897
                             761038817211a1e05101c6c2a4bb11bc: ref!! 461880ae-c1d4-4c55-8621-4ee5ab56dbff
                             1d7a9d916fdb51f866a67e6553540bf9: ref!! 29de5285-2871-4be8-95c0-f7769143a7ab
+                            bd16ea2c64eb28536d6f34e12e3fc04f: ref!! e2718f1c-4ca2-467c-9c5b-cd290a89adfc
                             ab6c815b5f4eb67ff0410587593583e2: ref!! 4d27eef0-402b-49e8-b2d2-0e6ee94920cc
                     b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
                         Id: d5216f36-c865-4953-b090-967da18a21b9
