@@ -12,6 +12,8 @@ namespace LudumDare54.Player
         public TransformComponent XRotation;
         public TransformComponent YRotation;
 
+        [Stride.Core.DataMemberIgnore] public Vector2 Rotation => _rotation;
+
         public override void Start()
         {
             CursorManager.GlobalState = false;
@@ -26,7 +28,7 @@ namespace LudumDare54.Player
         {
             _rotation -= Input.MouseDelta * Game.Window.ClientBounds.Height / 1000f;
 
-            _rotation.Y = Math.Clamp(_rotation.Y, -1.5f, 1.5f);
+            _rotation.Y = Math.Clamp(_rotation.Y, -(float)Math.PI / 2f, (float)Math.PI / 2f);
 
             YRotation.RotationEulerXYZ = new Vector3(0f, _rotation.X, 0f);
             XRotation.RotationEulerXYZ = new Vector3(_rotation.Y, 0f, 0f);

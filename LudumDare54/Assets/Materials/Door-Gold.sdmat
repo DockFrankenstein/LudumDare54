@@ -1,5 +1,5 @@
 !MaterialAsset
-Id: f5f51380-3402-468e-90a2-e6acaf56de7b
+Id: 199bec09-b583-4d1c-8248-5c30b637a34d
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Attributes:
@@ -10,14 +10,14 @@ Attributes:
     Diffuse: !MaterialDiffuseMapFeature
         DiffuseMap: !ComputeTextureColor
             FallbackValue:
-                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Value: {R: 1.0, G: 1.0, B: 0.0, A: 1.0}
             Scale: {X: 1.0, Y: 1.0}
             Offset: {X: 0.0, Y: 0.0}
             Swizzle: null
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Specular: !MaterialSpecularMapFeature
         SpecularMap: !ComputeColor
-            Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Value: {R: 1.0, G: 1.0, B: 0.0, A: 1.0}
         Intensity: !ComputeFloat
             Value: 1.0
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
@@ -28,7 +28,7 @@ Attributes:
     Emissive: !MaterialEmissiveMapFeature
         EmissiveMap: !ComputeTextureColor
             FallbackValue:
-                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Value: {R: 1.0, G: 1.0, B: 0.0, A: 1.0}
             Scale: {X: 1.0, Y: 1.0}
             Offset: {X: 0.0, Y: 0.0}
             Swizzle: null

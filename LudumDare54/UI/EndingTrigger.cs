@@ -15,6 +15,7 @@ namespace LudumDare54
 
         public Door door;
 
+        public Color color = Color.White;
         public List<string> messages { get; } = new List<string>();
 
         List<Label> _labels;
@@ -52,7 +53,7 @@ namespace LudumDare54
         {
             _panel = new Panel()
             {
-                Background = new SolidBrush(new Color(255, 255, 255, 255)),
+                Background = new SolidBrush(new Color(color.R, color.G, color.B, color.A)),
                 Opacity = 0f,
             };
 

@@ -8,6 +8,7 @@ using Stride.Input;
 using Stride.Physics;
 using Stride.Engine;
 using qASIC;
+using Stride.Core;
 
 namespace LudumDare54.Player
 {
@@ -18,9 +19,28 @@ namespace LudumDare54.Player
 
         public float speed = 6f;
 
+        [DataMember] float jumpHeight = 5f;
+
+        [DataMemberIgnore] public Atmosphere DefaultAtmosphere { get; private set; }
+        private Atmosphere _currentAtmosphere;
+        [DataMemberIgnore] public Atmosphere CurrentAtmosphere
+        {
+            get => _currentAtmosphere;
+            set
+            {
+                qDebug.Log("Changed atmosphere", "green");
+                _currentAtmosphere = value;
+                character.Gravity = value.gravity;
+            }
+        }
+
         public override void Start()
         {
-            
+            CurrentAtmosphere = DefaultAtmosphere = new Atmosphere()
+            {
+                gravity = character.Gravity,
+                jumpHeight = jumpHeight,
+            };
         }
 
         public override void Update()
@@ -33,6 +53,9 @@ namespace LudumDare54.Player
                 directionTransform.WorldMatrix.Forward * input.Y;
 
             character.SetVelocity(direction * speed);
+
+            if (Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
+                character.Jump(Vector3.UnitY * CurrentAtmosphere.jumpHeight);
         }
 
         Vector2 GetPathInput()
@@ -59,8 +82,16 @@ namespace LudumDare54.Player
 
         public void Teleport(Vector3 targetPosition)
         {
+            character.Jump(Vector3.Zero);
             character.Teleport(targetPosition);
             qDebug.Log($"Teleported player to {targetPosition}");
+        }
+
+        [DataContract]
+        public struct Atmosphere
+        {
+            public Vector3 gravity;
+            public float jumpHeight;
         }
     }
 }
