@@ -757,6 +757,41 @@ Hierarchy:
                 BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
                 InstanceId: c8069122-a4b5-47a2-af38-6d20155cfaec
         -   Entity:
+                Id: 20095048-7b39-43c6-bb4a-e2da17932042
+                Name: Mike
+                Components:
+                    5e5ea776ff0a05c2f4c68166b3475541: !TransformComponent
+                        Id: a661a86a-00dc-495b-a434-6c84701775f3
+                        Position: {X: 0.0, Y: 0.99999994, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.2, Y: 0.2, Z: 0.2}
+                        Children: {}
+                    4d24421d4fdff155e40e3c1b68b3c990: !SpriteComponent
+                        Id: efcf043f-5c76-4eda-81dd-9350b82e236a
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: c0e1f542-9541-4f87-899a-e181820b8cc6:Sprites/Mike
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    f0b82eaedd4ff4f4702a2d4ebe2ff6fa: !StaticColliderComponent
+                        Id: 3139b05b-53f3-4202-825c-6976c9a2dd20
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            193831c343b0bd8797d55b37f86a525e: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 9.0, Y: 10.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: a1d11aee-ce7f-43d7-885e-8f7805d0d598:Prefabs/Mike
+                BasePartId: b341af30-cb6d-4f6d-a820-1b36ec2464c7
+                InstanceId: 35e35de1-cb1d-4dba-a5c7-d3873f9daeb3
+        -   Entity:
                 Id: 208f06f2-4702-434a-a8f4-bb2cdc471347
                 Name: Ground
                 Components:
@@ -2331,7 +2366,7 @@ Hierarchy:
                     c3a48afdce1db7cf4247ae296a428824: !SpriteComponent
                         Id: 34eeb2c7-3d4c-4857-babb-1d4ad350d2d9
                         SpriteProvider: !SpriteFromSheet
-                            Sheet: e63a2074-6365-4dc6-8ff5-5d6b553a9807:Sprites/SpriteSheet_2
+                            Sheet: e63a2074-6365-4dc6-8ff5-5d6b553a9807:Sprites/E1 Text
                         Color: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
                     811baca23d73977a3a8ac0916556b4f7: ~(Deleted)
             Base:
@@ -4211,6 +4246,7 @@ Hierarchy:
                             c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! 065c0bff-a393-4bf1-93b4-9e8ee30eb833
                             761038817211a1e05101c6c2a4bb11bc: ref!! 8a787a11-e210-464f-9c73-de2740090e57
                             1d7a9d916fdb51f866a67e6553540bf9: ref!! 04cb6d58-f5eb-40df-87f7-91919cba41c9
+                            74684face24b7c050705116992b9b94e: ref!! a661a86a-00dc-495b-a434-6c84701775f3
                     b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
                         Id: b538c05f-28b4-4832-9d1c-91aa9a04206f
                         startPoint: ref!! 04cb6d58-f5eb-40df-87f7-91919cba41c9
@@ -4559,8 +4595,7 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
                 InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
-        -   Folder: null
-            Entity:
+        -   Entity:
                 Id: d536c6d9-a3ba-4139-90b2-bb84645e85d9
                 Name*: S5
                 Components:

@@ -1,0 +1,39 @@
+!PrefabAsset
+Id: a1d11aee-ce7f-43d7-885e-8f7805d0d598
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! b341af30-cb6d-4f6d-a820-1b36ec2464c7
+    Parts:
+        -   Entity:
+                Id: b341af30-cb6d-4f6d-a820-1b36ec2464c7
+                Name: Mike
+                Components:
+                    5e5ea776ff0a05c2f4c68166b3475541: !TransformComponent
+                        Id: cbd23254-8a96-4a1e-956c-c768324db131
+                        Position: {X: 0.0, Y: 0.99999994, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.2, Y: 0.2, Z: 0.2}
+                        Children: {}
+                    4d24421d4fdff155e40e3c1b68b3c990: !SpriteComponent
+                        Id: 52f7571d-d488-495c-b290-91aa934df3f2
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: c0e1f542-9541-4f87-899a-e181820b8cc6:Sprites/Mike
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    f0b82eaedd4ff4f4702a2d4ebe2ff6fa: !StaticColliderComponent
+                        Id: cc9b728a-2e03-4aff-b6fd-bfcdf4dbb463
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            193831c343b0bd8797d55b37f86a525e: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 9.0, Y: 10.0, Z: 0.1}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

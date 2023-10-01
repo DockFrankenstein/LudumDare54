@@ -8,13 +8,15 @@ Attributes:
         GlossinessMap: !ComputeFloat
             Value: 0.6
     Diffuse: !MaterialDiffuseMapFeature
+        Enabled: false
         DiffuseMap: !ComputeTextureColor
             FallbackValue:
                 Value: {R: 1.0, G: 1.0, B: 0.0, A: 1.0}
             Scale: {X: 1.0, Y: 1.0}
             Offset: {X: 0.0, Y: 0.0}
             Swizzle: null
-    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature
+        Enabled: false
     Specular: !MaterialSpecularMapFeature
         SpecularMap: !ComputeColor
             Value: {R: 1.0, G: 1.0, B: 0.0, A: 1.0}
@@ -33,7 +35,7 @@ Attributes:
             Offset: {X: 0.0, Y: 0.0}
             Swizzle: null
         Intensity: !ComputeFloat
-            Value: 2.0
+            Value: 10.0
     Overrides:
         UVScale: {X: 1.0, Y: 1.0}
 Layers: {}

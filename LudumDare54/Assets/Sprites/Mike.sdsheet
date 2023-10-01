@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: c0e1f542-9541-4f87-899a-e181820b8cc6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    a6f4549186804eaf1e3741f7a8f9560e:
+        Source: !file ../../Resources/mike.png
+        Name: mike
+        TextureRegion: {X: 0, Y: 0, Width: 1024, Height: 1024}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
