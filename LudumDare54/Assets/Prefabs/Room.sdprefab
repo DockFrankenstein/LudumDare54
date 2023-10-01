@@ -127,28 +127,6 @@ Hierarchy:
                 BasePartId: 67e62c64-5333-42c2-aa0e-7530f65f263f
                 InstanceId: 1f2fb249-d837-4afd-9fba-c64ac3fbd5c1
         -   Entity:
-                Id: 51a67c4a-0d08-4724-b164-9d6239bc84a7
-                Name: Directional light
-                Components:
-                    4c333951764094a8c646eb26b923184f: !TransformComponent
-                        Id: 4c1d64ed-2fd2-4c7d-a76b-32be255ecaa7
-                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: 0.02002211, Y: -0.71916175, Z: 0.6216697, W: -0.30972928}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    273c580d823e3ca6209c208a56324c3a: !LightComponent
-                        Id: 5420849a-410f-40bb-84ef-2b58ccd5e99b
-                        Type: !LightDirectional
-                            Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
-                                Size: Large
-                                DepthRange: {}
-                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
-                                ComputeTransmittance: false
-                                BiasParameters: {}
-                        Intensity: 0.8
-        -   Entity:
                 Id: 57270980-a269-4216-9768-debb5e3dbd3e
                 Name: Ground
                 Components:
@@ -335,9 +313,6 @@ Hierarchy:
                             cced41135b2a924382c27f50e4b6633b: ref!! 82f6fabe-8409-48d9-ae0f-c0476c332cde
                             e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 4acd0196-7802-4576-9545-24da7e917896
                             d1075401a81238639c2a4724da6639fb: ref!! 29820e14-2aef-4649-81b4-cd092571e669
-                            cc1051bf8854a636d214b1106aeef44b: ref!! 4c1d64ed-2fd2-4c7d-a76b-32be255ecaa7
-                            5a15efb02a56a49b44d4ae2190578812: ref!! 0e33b5a2-85c2-4951-a6f8-30bb91389148
-                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! c04e7464-fa4d-49a1-8351-55e9e2106153
                             55d20452fcd387fe3149fce2d558f076: ref!! 664f1d2c-8eb5-4126-a902-4addc36dbba0
                             09200679dce470015374a30d4c2f5479: ref!! caafe4cd-eb17-4fbc-890d-8ac6b1bce3cf
                             f72b79e81be339f507a865e3d01eebb6: ref!! c4f13f1e-369a-49da-af5c-c2b18ca1a389
@@ -408,47 +383,3 @@ Hierarchy:
                 BasePartAsset: e7217fa5-6512-4aad-9941-30ef0d2791e0:Prefabs/Directional light
                 BasePartId: 67e62c64-5333-42c2-aa0e-7530f65f263f
                 InstanceId: a2f4946f-49e9-4c07-88fa-25247b598168
-        -   Entity:
-                Id: dbdb4315-d1c9-4507-a866-6a6e7784647d
-                Name: Directional light
-                Components:
-                    4c333951764094a8c646eb26b923184f: !TransformComponent
-                        Id: 0e33b5a2-85c2-4951-a6f8-30bb91389148
-                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: 0.25064743, Y: -0.7367996, Z: -0.5159126, W: -0.35796165}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    273c580d823e3ca6209c208a56324c3a: !LightComponent
-                        Id: 0a0412b6-946c-473e-a6f5-a1c0e29cc9eb
-                        Type: !LightDirectional
-                            Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
-                                Size: Large
-                                DepthRange: {}
-                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
-                                ComputeTransmittance: false
-                                BiasParameters: {}
-                        Intensity: 4.0
-        -   Entity:
-                Id: e7bd1909-2677-496d-882e-573032107531
-                Name: Directional light
-                Components:
-                    4c333951764094a8c646eb26b923184f: !TransformComponent
-                        Id: c04e7464-fa4d-49a1-8351-55e9e2106153
-                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: -0.50684667, Y: -0.38346878, Z: -0.26850775, W: 0.723852}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    273c580d823e3ca6209c208a56324c3a: !LightComponent
-                        Id: e14258ee-f9d8-4f1e-bcf1-8d9352da070c
-                        Type: !LightDirectional
-                            Color: !ColorRgbProvider
-                                Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
-                                Size: Large
-                                DepthRange: {}
-                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
-                                ComputeTransmittance: false
-                                BiasParameters: {}
-                        Intensity: 4.0

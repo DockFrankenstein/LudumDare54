@@ -7,6 +7,7 @@ Parent: 9bfa0258-0d25-4685-9dc4-b34432eb9000:Scenes/MainScene
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
+        - ref!! febec20b-2fda-4c65-a228-5690a9505074
         - ref!! 4abda0d7-d359-4485-b133-3a8262f860ac
         - ref!! eb841715-ac16-442b-8f7a-c84690c5affa
         - ref!! 4f756b2c-aa9e-48ea-9f8e-4c05456cc42a
@@ -64,6 +65,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 3c2f37e2-5943-485f-8133-7e59e41cea48
+                        Enabled*: true
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -73,11 +75,7 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-                        Intensity: 4.0
-            Base:
-                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
-                BasePartId: e7bd1909-2677-496d-882e-573032107531
-                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+                        Intensity*: 24.0
         -   Entity:
                 Id: 05ddbc23-8499-4c4f-98d3-3b82a02420dc
                 Name: Directional light
@@ -156,6 +154,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 492b5932-72a7-4cc6-a5a1-550899e80e44
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -497,6 +496,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: a4edaf1d-6512-4864-bdf9-c95ebae0c1c8
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -523,6 +523,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 2dd3657d-5eaa-4e82-99f2-a595d0f7392d
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -621,6 +622,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: f54cccd1-853a-4c79-978c-165971954b86
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -699,6 +701,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 5f672456-a76d-46cd-8927-03142a5c6f3b
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1004,6 +1007,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 114c43a9-7d66-4a6b-bf0b-bcefd3d7d1b7
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1124,6 +1128,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 9b6fbbf8-75dc-4b82-b278-2dce15f757e0
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1300,6 +1305,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 7e02c110-6760-40ae-8b6d-c5baeefafc52
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1326,6 +1332,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: f3d695fd-fd11-443d-8c82-92654b2a34df
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1537,6 +1544,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 4a68635a-ea96-46bc-b3eb-5a427706e495
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1685,6 +1693,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 2c2385dc-5498-4f5d-ab5f-dbcae8686f66
+                        Enabled*: true
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -1694,11 +1703,7 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-                        Intensity: 4.0
-            Base:
-                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
-                BasePartId: dbdb4315-d1c9-4507-a866-6a6e7784647d
-                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+                        Intensity*: 24.0
         -   Entity:
                 Id: 95a64e82-5c4c-4c99-be72-c56bb5f733fe
                 Name: Directional light
@@ -1861,6 +1866,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: fa3ddb1f-abbf-41c7-bfde-09b84e2e83b8
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -2147,6 +2153,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 851339db-d636-4345-bfcd-d2052d25c772
+                        Enabled*: true
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -2156,11 +2163,7 @@ Hierarchy:
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-                        Intensity: 0.8
-            Base:
-                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
-                BasePartId: 51a67c4a-0d08-4724-b164-9d6239bc84a7
-                InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+                        Intensity*: 4.8
         -   Entity:
                 Id: d1198e7f-ac40-4f40-9d70-7eac3c98fc59
                 Name: Ground
@@ -2378,6 +2381,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: d059bd1d-b75d-4c05-b8f7-cdd4479d6c2f
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -2747,6 +2751,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: e4fd0134-9825-4f67-950f-4c39caccb905
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -2812,9 +2817,6 @@ Hierarchy:
                             cced41135b2a924382c27f50e4b6633b: ref!! 8864b307-5b20-4e74-9f6c-44fd281d7d13
                             e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 0fd3eadf-6f3f-411e-8089-161bcd6da695
                             d1075401a81238639c2a4724da6639fb: ref!! d7d26b11-89c4-403a-be05-530d596db69b
-                            cc1051bf8854a636d214b1106aeef44b: ref!! b242e043-f78f-4ce6-8067-b15aa87b5480
-                            5a15efb02a56a49b44d4ae2190578812: ref!! 6c3b7fbd-aafb-4fe0-9961-4f412855887f
-                            4b7e5f550d7762301a217f9fa2a22ac9: ref!! 054dc28c-d4a6-45ba-afd8-b4492b5cd451
                             55d20452fcd387fe3149fce2d558f076: ref!! 6acc7fed-5ca4-4eb4-823d-6d922cf67f80
                             09200679dce470015374a30d4c2f5479: ref!! c26f5438-496b-4b13-9417-f994c779e4b5
                             f72b79e81be339f507a865e3d01eebb6: ref!! 316ce5cb-5d90-4ded-b6b3-1ca372d11033
@@ -3061,6 +3063,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: aa12e215-6b4a-4e01-b170-0bc84189b0ab
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -3087,6 +3090,7 @@ Hierarchy:
                         Children: {}
                     273c580d823e3ca6209c208a56324c3a: !LightComponent
                         Id: 64f3da99-af14-4c32-9af1-ceb2a08ef0e9
+                        Enabled: false
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
@@ -3137,3 +3141,16 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
                 InstanceId: 76d8792f-686a-45a6-bb03-d054d4029b64
+        -   Entity:
+                Id: febec20b-2fda-4c65-a228-5690a9505074
+                Name: Lights
+                Components:
+                    7830e640060f930b4118e3230e963029: !TransformComponent
+                        Id: 8693f391-3209-456e-8314-2a838982ed7d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ce1ddab3ae6517d096c3d2195fc086c0: ref!! b242e043-f78f-4ce6-8067-b15aa87b5480
+                            c1cbac6d83a3c4862e568e769f82bc47: ref!! 6c3b7fbd-aafb-4fe0-9961-4f412855887f
+                            ab048a07a48564847127dcd37f327fa7: ref!! 054dc28c-d4a6-45ba-afd8-b4492b5cd451

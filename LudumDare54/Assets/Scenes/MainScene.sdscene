@@ -22,4 +22,3 @@ Hierarchy:
                     cd246a2791d412c346f41b2a835e787c: !LudumDare54.SceneManager,LudumDare54
                         Id: 870458ab-327f-4bfe-beee-2d8a0c297eb1
                         defaultScene: 292dfd88-5050-4fcf-a810-d0045e697625:Scenes/Game
-                        CurrentScene: null
