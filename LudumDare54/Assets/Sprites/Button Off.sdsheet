@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 217fbfae-4819-4b6e-a893-ff892d0f88e5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    1c3a1074d8c91cf6afd5d5ab5f0a7887:
+        Source: !file ../../Resources/button off.png
+        Name: button off
+        TextureRegion: {X: 0, Y: 0, Width: 1024, Height: 1024}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

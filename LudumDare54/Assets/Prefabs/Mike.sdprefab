@@ -21,6 +21,7 @@ Hierarchy:
                         SpriteProvider: !SpriteFromSheet
                             Sheet: c0e1f542-9541-4f87-899a-e181820b8cc6:Sprites/Mike
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
                     f0b82eaedd4ff4f4702a2d4ebe2ff6fa: !StaticColliderComponent
                         Id: cc9b728a-2e03-4aff-b6fd-bfcdf4dbb463
                         CanSleep: false

@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: d7712bed-64da-4871-8901-edff35f7b446
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    acbf5de36c5a6e01810771c7235d134d:
+        Source: !file ../../Resources/button on.png
+        Name: button on
+        TextureRegion: {X: 0, Y: 0, Width: 1024, Height: 1024}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

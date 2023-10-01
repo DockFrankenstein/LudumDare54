@@ -21,6 +21,7 @@ Hierarchy:
                         SpriteProvider: !SpriteFromSheet
                             Sheet: e63a2074-6365-4dc6-8ff5-5d6b553a9807:Sprites/E1 Text
                         Color: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
+                        IsAlphaCutoff: true
                     811baca23d73977a3a8ac0916556b4f7: !LudumDare54.FloatingText,LudumDare54
                         Id: 0a94a226-ed0e-4945-85a4-e87d3fbab036
                         Priority: 1

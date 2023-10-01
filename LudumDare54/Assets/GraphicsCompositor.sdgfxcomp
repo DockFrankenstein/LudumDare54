@@ -130,7 +130,7 @@ SharedRenderers:
             87ff1d9cdd52418daf76385176a0e316: ref!! 7609aad5-57ca-4d3f-89a9-72d977a7584e
             5e059d4cc2db4ee8a1f28a40f4ac3ae8: ref!! d45d3728-c964-478d-9a06-769599b1cd31
         GBufferRenderStage: ref!! 9be53bde-cd76-455e-aaae-7743e127837e
-        PostEffects*: !PostProcessingEffects ref!! 19f13b71-b37e-465c-aa1a-f81e1a5707cf
+        PostEffects*: !PostProcessingEffects ref!! 51b00e39-407f-4468-a8ce-a626e493491f
         LightShafts: null
         VRSettings:
             Enabled: false
@@ -187,6 +187,8 @@ SharedRenderers:
             DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
         BrightFilter:
             Enabled*: true
+            Threshold*: 1.0
+            Steepness*: 1.0
             Color: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
@@ -225,6 +227,7 @@ SharedRenderers:
                     Color: {R: 0.0, G: 0.0, B: 0.0}
                 c57351444609d14ea258b3f511ec8a74: ~(Deleted)
         Antialiasing: !FXAAEffect
+            Enabled*: true
             Dither*: Medium
     ee80a20a9bd99f2d70711114e15fe7ca: !Stride.Rendering.Compositing.DebugRenderer,Stride.Rendering
         Id: b57ad8ed-2929-44fa-a33b-ec1c56bd33b5

@@ -16,6 +16,9 @@ namespace LudumDare54.Player
         public TransformComponent center;
         public PhysicsComponent physicsComponent;
         public CollisionFilterGroupFlags layer;
+        public UI.InteractUI interactUI;
+
+        IInteractable target;
 
         public override void Start()
         {
@@ -26,9 +29,29 @@ namespace LudumDare54.Player
         {
             center.UpdateWorldMatrix();
             var hit = Cast(center, physicsComponent.Simulation);
+            HandleCastHit(hit);
 
             if (Input.HasKeyboard && Input.IsKeyPressed(Keys.E))
-                qASIC.qDebug.Log($"Interaction key pressed, hit succeeded: {hit.Succeeded}", "green");
+                Interact();
+        }
+
+        void HandleCastHit(HitResult hit)
+        {
+            target = hit.Succeeded ?
+                hit.Collider.Entity.Get<Interactable>() :
+                null;
+
+            interactUI.Active = target != null;
+        }
+
+        void Interact()
+        {
+            if (target == null)
+                return;
+
+            target.Interact(this);
+
+            qASIC.qDebug.Log($"Player interacted", "green");
         }
 
         public HitResult Cast(TransformComponent center, Simulation simulation) =>

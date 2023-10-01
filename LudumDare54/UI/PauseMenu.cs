@@ -97,9 +97,15 @@ namespace LudumDare54.UI
             
             var settingsButton = CreateButton("Settings");
             settingsButton.GridRow = 1;
-            settingsButton.Click += (_, _) => settingsWindow.ShowModal(CanvasDesktop, 
-                new Point(Game.Window.ClientBounds.Width * 3 / 4 - (settingsWindow.Width ?? 0) / 2, 
-                Game.Window.ClientBounds.Height / 2 - (settingsWindow.Height ?? 0) / 2));
+            settingsButton.Click += (_, _) =>
+            {
+                settingsData = settings.SettingsData;
+
+                var windowPoint = new Point(Game.Window.ClientBounds.Width * 3 / 4 - (settingsWindow.Width ?? 0) / 2,
+                Game.Window.ClientBounds.Height / 2 - (settingsWindow.Height ?? 0) / 2);
+
+                settingsWindow.ShowModal(CanvasDesktop, windowPoint);
+            };
 
             var restartButton = CreateButton("Restart");
             restartButton.GridRow = 2;

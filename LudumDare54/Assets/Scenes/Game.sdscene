@@ -20,6 +20,7 @@ Hierarchy:
         - ref!! ae0d59d0-2a76-4ead-9b0e-3e2b03477c1d
         - ref!! 132baa45-e728-45cb-b381-8545d1ccfeac
         - ref!! b336b122-b132-485e-8206-1a17aa8effaf
+        - ref!! ddb5ec7e-f083-4e69-8a5d-bf276cbf5dc9
         - ref!! d267d068-1e5c-46df-9833-c213407a2db9
     Parts:
         -   Entity:
@@ -649,7 +650,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: f132a5f6-9140-44ae-84f8-b67caab45714
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -712,7 +713,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: eac23bd6-c53a-4c81-8565-05c996fc060d
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -771,6 +772,7 @@ Hierarchy:
                         SpriteProvider: !SpriteFromSheet
                             Sheet: c0e1f542-9541-4f87-899a-e181820b8cc6:Sprites/Mike
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
                     f0b82eaedd4ff4f4702a2d4ebe2ff6fa: !StaticColliderComponent
                         Id: 3139b05b-53f3-4202-825c-6976c9a2dd20
                         CanSleep: false
@@ -797,7 +799,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: 316ce5cb-5d90-4ded-b6b3-1ca372d11033
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1276,7 +1278,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: c1e6443f-d47f-4dbf-be8b-44a56fc33d87
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1729,10 +1731,11 @@ Hierarchy:
                         YRotation: ref!! 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
                     18555c2dc9bb96e067f06da0622b85e4: !LudumDare54.Player.PlayerInteract,LudumDare54
                         Id: 1fbc81a7-a082-483c-9ae4-f25edcefa86b
-                        length: 8.0
+                        length: 3.0
                         center: ref!! 80f624d2-fced-4efd-bb04-aeeacac85e49
                         physicsComponent: !CharacterComponent ref!! a3c2e806-e42e-4597-b64e-518361a3284a
                         layer: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, SensorTrigger, CharacterFilter, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10
+                        interactUI: ref!! e02b1d00-29f5-4557-9270-d59721d35c29
         -   Entity:
                 Id: 4c77f22e-c3ea-4fa4-9a18-75c9545b5081
                 Name: Directional light
@@ -2368,6 +2371,7 @@ Hierarchy:
                         SpriteProvider: !SpriteFromSheet
                             Sheet: e63a2074-6365-4dc6-8ff5-5d6b553a9807:Sprites/E1 Text
                         Color: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
+                        IsAlphaCutoff: true
                     811baca23d73977a3a8ac0916556b4f7: ~(Deleted)
             Base:
                 BasePartAsset: 56591022-b330-4ddb-a2c3-3b94ead185e8:Prefabs/Floating Text
@@ -2512,7 +2516,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: 3886534c-c322-4176-8572-84d036352276
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -2734,7 +2738,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: 3f71f623-df13-4479-baec-4d2cb03ab35d
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3378,7 +3382,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: 4e020da3-4bdd-431d-9377-d7c6990fe4d0
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3441,7 +3445,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: e7873f87-5bd0-4125-a795-a0e510c9743d
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3519,10 +3523,12 @@ Hierarchy:
                         Children: {}
                     9d949f4d6b47ffe291bda046d228d771: !ModelComponent
                         Id: 9147407d-e32d-4089-bf4a-750e0e6bad4e
+                        Enabled*: false
                         Model: 4d8eaaf1-1024-48b1-9d90-3f41492b4b77:Models/Door
                         Materials: {}
                     3f65fe772f12364b655b7a15534c5fa7: !StaticColliderComponent
                         Id: 424b21b4-024e-4717-9a5f-3b3cf6abe05d
+                        Enabled*: false
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -3836,6 +3842,7 @@ Hierarchy:
                             c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! 6319a5e0-04cb-452c-a807-c12755a27036
                             761038817211a1e05101c6c2a4bb11bc: ref!! d0e7a884-22f5-4c73-ab28-261fb852df66
                             1d7a9d916fdb51f866a67e6553540bf9: ref!! 585ab1a9-1296-4318-9561-1e54a871f21a
+                            99bc238a3e8fd72944a3dd3342c8265a: ref!! 1029df81-4448-4dfa-97b4-8c3063f34e54
                     b4b078c8af4fac61de7b83f17f90b6ca: !LudumDare54.Room,LudumDare54
                         Id: 335301d8-f462-44ee-a39c-534fad776551
                         startPoint: ref!! 585ab1a9-1296-4318-9561-1e54a871f21a
@@ -4540,6 +4547,44 @@ Hierarchy:
                 BasePartId: 6157d415-075b-4e23-8824-dd6ed997e4a7
                 InstanceId: c5da93bc-69c1-4f1b-b699-95a0274534b7
         -   Entity:
+                Id: d2f3f418-1a53-4929-9075-1de15b0fa389
+                Name: Button
+                Components:
+                    c8304a4420b4276aa65caad1ce757933: !TransformComponent
+                        Id: 1029df81-4448-4dfa-97b4-8c3063f34e54
+                        Position: {X: 0.0, Y: 0.75, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.15, Y: 0.15, Z: 0.15}
+                        Children: {}
+                    4f640f60697e2b24c6999d22a8950080: !SpriteComponent
+                        Id: c77bce2a-1d26-4559-93c5-5acee8968901
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 217fbfae-4819-4b6e-a893-ff892d0f88e5:Sprites/Button Off
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        IsAlphaCutoff: true
+                    19e14e2000431fc33d8dff1bbf01456a: !LudumDare54.ButtonInteractable,LudumDare54
+                        Id: 155a0c1e-b2b6-4dea-a6cd-9d5083012515
+                        EntityToToggle: ref!! a8ee82e2-0bdd-46cd-a69b-d93a6ea4ff7a
+                        SpriteComponent: ref!! c77bce2a-1d26-4559-93c5-5acee8968901
+                        EnabledSprite: !SpriteFromSheet
+                            Sheet: d7712bed-64da-4871-8901-edff35f7b446:Sprites/Button On
+                    344dd0a444538db91bc1023522b0a7cf: !StaticColliderComponent
+                        Id: cee1f05c-1bb7-4eb1-ad7f-60b85972cdd3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            be5c858eebc94843bba44db45568fa9b: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 2.0, Y: 7.0, Z: 0.1}
+                                LocalOffset: {X: -0.5, Y: -1.5, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
                 Id: d355bf31-5483-4144-890e-1862f8fa3d1e
                 Name: Directional light
                 Components:
@@ -4824,6 +4869,21 @@ Hierarchy:
                 BasePartId: 2be66869-b3f8-4474-8e6d-a2115b7422ed
                 InstanceId: 6e25f180-b82a-4d4b-b015-b989179bdeb9
         -   Entity:
+                Id: ddb5ec7e-f083-4e69-8a5d-bf276cbf5dc9
+                Name: Interact UI
+                Components:
+                    700c53d7841939fb164ad90bce95d752: !TransformComponent
+                        Id: 4d4a5b84-e9f4-4960-af22-223bfd4fd28e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a7f0bc88d83b7950836917da8d39e66c: !LudumDare54.UI.InteractUI,LudumDare54
+                        Id: e02b1d00-29f5-4557-9270-d59721d35c29
+                        activeByDefault: false
+                        uiPriority: -10
+                        Active: false
+        -   Entity:
                 Id: de77059c-3ada-4804-9bdd-dd718f8c6e2f
                 Name: Directional light
                 Components:
@@ -5054,7 +5114,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: a99389da-a390-46cf-b125-d6086e66e34f
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -5326,7 +5386,7 @@ Hierarchy:
                 Components:
                     c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
                         Id: eec30952-13c1-4864-92dc-d73ca589b5d3
-                        Position: {X: 0.0, Y: 7.5286307, Z: 0.0}
+                        Position: {X: 0.0, Y: 10.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 1.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
