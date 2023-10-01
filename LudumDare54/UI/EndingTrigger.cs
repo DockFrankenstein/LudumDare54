@@ -15,7 +15,9 @@ namespace LudumDare54
 
         public Door door;
 
-        public Color color = Color.White;
+        public Color backgroundColor = Color.White;
+        public Color textColor = Color.Black;
+
         public List<string> messages { get; } = new List<string>();
 
         List<Label> _labels;
@@ -32,11 +34,20 @@ namespace LudumDare54
         private void Door_OnPlayerEnter(Player.PlayerMove obj)
         {
             Active = true;
-            _animate = true;
+        }
+
+        public override void OnChangeState(bool isActive)
+        {
+            base.OnChangeState(isActive);
+
+            if (isActive)
+                _animate = true;
         }
 
         bool _animate = false;
         double time = 0;
+
+        bool _continuePressed;
 
         public override void Update()
         {
@@ -46,13 +57,14 @@ namespace LudumDare54
             _panel.Opacity = Math.Clamp((float)(time / BACKGROUND_FADE_DURATION), 0f, 1f);
 
             for (int i = 0; i < _labels.Count; i++)
-                _labels[i].TextColor = new Color(0, 0, 0, (byte)Math.Round(Math.Clamp((time - BACKGROUND_FADE_DURATION - i * TEXT_FADE_DURATION) * 255.0 / TEXT_FADE_DURATION, 0.0, 255.0)));
+                _labels[i].Opacity = (float)Math.Clamp((time - BACKGROUND_FADE_DURATION - i * TEXT_FADE_DURATION) / TEXT_FADE_DURATION, 0.0, 1.0);
         
-            if (time > BACKGROUND_FADE_DURATION - (_labels.Count - 2) * TEXT_FADE_DURATION)
+            if (!_continuePressed && time > BACKGROUND_FADE_DURATION + (_labels.Count - 1) * TEXT_FADE_DURATION)
             {
                 if (Input.HasKeyboard && Input.IsKeyPressed(Stride.Input.Keys.E))
                 {
-                    FaderUI.Instance.Fade(color, 1.0, 1.0, () =>
+                    _continuePressed = true;
+                    FaderUI.Instance.Fade(backgroundColor, 1.0, 1.0, () =>
                     {
                         SceneManager.Instance.ReloadScene();
                     });
@@ -64,7 +76,7 @@ namespace LudumDare54
         {
             _panel = new Panel()
             {
-                Background = new SolidBrush(new Color(color.R, color.G, color.B, color.A)),
+                Background = new SolidBrush(new Color(backgroundColor.R, backgroundColor.G, backgroundColor.B, backgroundColor.A)),
                 Opacity = 0f,
             };
 
@@ -89,7 +101,7 @@ namespace LudumDare54
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center,
                     Font = MyraRenderer.Ft_SpartanRegular.GetFont(24),
-                    TextColor = new Color(0),
+                    TextColor = textColor,
                     Height = 24,
                     GridRow = i,
                 };
@@ -102,12 +114,12 @@ namespace LudumDare54
 
             var continueLabel = new Label()
             {
-                Text = "Press E to continue",
+                Text = "Press E to restart",
                 Font = MyraRenderer.Ft_SpartanSemiBold.GetFont(20),
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Bottom,
                 Margin = new Myra.Graphics2D.Thickness(0, 0, 0, 40),
-                TextColor = new Color(0),
+                TextColor = textColor,
             };
 
             _labels.Add(continueLabel);

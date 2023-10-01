@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 1d0b5a3b-19aa-4369-b4fc-ac80641bd2c9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    7e83e894c5e9a880ee93621ea32ff52a:
+        Source: !file ../../Resources/Text Images/Text-M2-Y.png
+        Name: Text-M2-Y
+        TextureRegion: {X: 0, Y: 0, Width: 1920, Height: 1080}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

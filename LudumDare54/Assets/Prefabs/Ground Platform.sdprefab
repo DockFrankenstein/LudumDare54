@@ -1,0 +1,101 @@
+!PrefabAsset
+Id: e45ce7be-3761-4134-8570-f368f06c0322
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 79b55de9-5cc6-42d1-b05b-8b7fbf56998e
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: 1ee00c56-d5a4-4d26-a11a-faac3d98141b
+                Name: Ground Platform Wall
+                Components:
+                    72680db0b78d23f6af4532e956f40491: !TransformComponent
+                        Id: 27ec86ae-34f9-405b-82cb-39d9859d32fa
+                        Position: {X: -2.0, Y: -20.0, Z: 0.0}
+                        Rotation: {X: -0.49999997, Y: 0.49999997, Z: 0.49999997, W: 0.49999997}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2525ff295e4b48a9b00780d1799e9c65: !ModelComponent
+                        Id: 8038091b-29cc-4574-bf80-05971194cb7c
+                        Model: cf82c050-90e5-430b-912a-845deeea0ecc:Models/Ground Platform Wall
+                        Materials: {}
+        -   Entity:
+                Id: 79b55de9-5cc6-42d1-b05b-8b7fbf56998e
+                Name: Ground Platform
+                Components:
+                    3ee32092b55adb7965a9ea887ff5a20c: !TransformComponent
+                        Id: b0462583-9b72-42ca-8ae2-430ced2fcd00
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            730a353d2f5d364b32bd53434fbe5b63: ref!! 62debb23-536d-4977-945f-c18ed5ab861b
+                            d840a55a3d1cce69403fc4b01ba9c644: ref!! 19717b3f-69b4-4f75-b2f7-ccf4e6fefc5c
+                            07e51d7460fb1fd6f8ef0902eba56d95: ref!! 27ec86ae-34f9-405b-82cb-39d9859d32fa
+                            1be7fc44b7e807b13dbde72ae3c6390a: ref!! 682dde90-023c-4ebe-9dbf-6ca29755950a
+                    e9538e1a1bc7a4b92a886731d1f610c6: !ModelComponent
+                        Id: 3f5f0b56-a598-4ab1-94cb-ab9ba9f02aeb
+                        Model: 694dad45-fc5d-4a35-b034-936b74515159:Models/Ground Platform
+                        Materials: {}
+                    13ba74ccd1dd207184615eca46b076e1: !StaticColliderComponent
+                        Id: 0a7ca177-a221-4ab7-9313-61b1107517cc
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            5aeeffd283b8d6e9027c425d29b184f6: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 4.0, Y: 40.0, Z: 4.0}
+                                LocalOffset: {X: 0.0, Y: -20.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 87d1634f-028d-4be3-96e9-50a432ba3a45
+                Name: Ground Platform Wall
+                Components:
+                    72680db0b78d23f6af4532e956f40491: !TransformComponent
+                        Id: 62debb23-536d-4977-945f-c18ed5ab861b
+                        Position: {X: 0.0, Y: -20.0, Z: 2.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 6.181724E-08, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2525ff295e4b48a9b00780d1799e9c65: !ModelComponent
+                        Id: 37bffcac-8103-4d72-adab-67bccf2a57bd
+                        Model: cf82c050-90e5-430b-912a-845deeea0ecc:Models/Ground Platform Wall
+                        Materials: {}
+        -   Folder: null
+            Entity:
+                Id: a607ebb4-5965-4833-b334-334551e21b6e
+                Name: Ground Platform Wall
+                Components:
+                    72680db0b78d23f6af4532e956f40491: !TransformComponent
+                        Id: 19717b3f-69b4-4f75-b2f7-ccf4e6fefc5c
+                        Position: {X: 0.0, Y: -20.0, Z: -2.0}
+                        Rotation: {X: -3.090862E-08, Y: 0.70710677, Z: -0.70710677, W: -3.090862E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2525ff295e4b48a9b00780d1799e9c65: !ModelComponent
+                        Id: 8529d7dc-5cc9-42fb-ad48-281ef28fb3a1
+                        Model: cf82c050-90e5-430b-912a-845deeea0ecc:Models/Ground Platform Wall
+                        Materials: {}
+        -   Folder: null
+            Entity:
+                Id: f2705900-ec86-405c-8f30-da929382baec
+                Name: Ground Platform Wall
+                Components:
+                    72680db0b78d23f6af4532e956f40491: !TransformComponent
+                        Id: 682dde90-023c-4ebe-9dbf-6ca29755950a
+                        Position: {X: 2.0, Y: -20.0, Z: 0.0}
+                        Rotation: {X: -0.49999997, Y: -0.49999997, Z: -0.49999997, W: 0.49999997}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2525ff295e4b48a9b00780d1799e9c65: !ModelComponent
+                        Id: cd943b7d-6b1f-450a-9b01-5bf22a63428b
+                        Model: cf82c050-90e5-430b-912a-845deeea0ecc:Models/Ground Platform Wall
+                        Materials: {}

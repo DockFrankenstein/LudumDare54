@@ -1,5 +1,5 @@
 !MaterialAsset
-Id: 6baf2978-705d-4603-bf8f-9c840d1cd288
+Id: c473b662-6e68-4e97-b2fb-63e26ed174aa
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Attributes:
@@ -15,19 +15,14 @@ Attributes:
         GlossinessMap: !ComputeFloat
             Value: 0.545
     Diffuse: !MaterialDiffuseMapFeature
-        DiffuseMap: !ComputeTextureColor
-            Texture: 882226e7-56a4-421d-9837-4d65a734046f:Texture/StoneTilesFloor01_4K_BaseColor
-            FallbackValue:
-                Value: {R: 1.0, G: 0.8392157, B: 0.43529412, A: 1.0}
-            Scale: {X: 1.0, Y: 1.0}
-            Offset: {X: 0.0, Y: 0.0}
-            Swizzle: null
+        DiffuseMap*: !ComputeColor
+            Value: {R: 0.76862746, G: 0.0, B: 1.0, A: 1.0}
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Specular: !MaterialSpecularMapFeature
         SpecularMap: !ComputeColor
-            Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Value*: {R: 1.0, G: 0.0, B: 0.92941177, A: 1.0}
         Intensity: !ComputeFloat
-            Value: 1.0
+            Value*: 0.974
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
         Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
         Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}

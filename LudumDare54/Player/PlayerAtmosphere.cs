@@ -107,39 +107,5 @@ namespace LudumDare54.Player
                     break;
             }
         }
-
-        async Task CheckCollision()
-        {
-            while (Game.IsRunning)
-            {
-                Collision firstCollision = await trigger.NewCollision();
-
-                PhysicsComponent otherCollider = trigger == firstCollision.ColliderA
-                    ? firstCollision.ColliderB
-                    : firstCollision.ColliderA;
-
-                look = otherCollider.Entity.Get<PlayerLook>();
-                move = otherCollider.Entity.Get<PlayerMove>();
-
-                if (look == null || move == null)
-                {
-                    look = null;
-                    move = null;
-                    continue;
-                }
-
-                collided = true;
-
-                //Wait for the entity to exit the trigger.
-                Collision collision;
-
-                do
-                {
-                    collision = await trigger.CollisionEnded();
-                }
-                while (collision != firstCollision);
-                collided = false;
-            }
-        }
     }
 }

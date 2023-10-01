@@ -12,7 +12,7 @@ Hierarchy:
                 Components:
                     41395d0de6878736ee28c87ebd3f00e5: !TransformComponent
                         Id: 79f48ae6-a32b-4e97-9f61-3dda9de8e5b9
-                        Position*: {X: -3.063466, Y: 6.2814274, Z: -8.455154}
+                        Position*: {X: -5.4346876, Y: 6.2814274, Z: -5.5570498}
                         Rotation: {X: -5.3385076E-08, Y: 0.70710677, Z: 0.70710677, W: 5.3385076E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -255,7 +255,7 @@ Hierarchy:
                             Shadow:
                                 BiasParameters:
                                     DepthBias: 0.001
-                        Intensity: 20.0
+                        Intensity*: 200.0
             Base:
                 BasePartAsset: e7217fa5-6512-4aad-9941-30ef0d2791e0:Prefabs/Directional light
                 BasePartId: 67e62c64-5333-42c2-aa0e-7530f65f263f
@@ -379,7 +379,7 @@ Hierarchy:
                             Shadow:
                                 BiasParameters:
                                     DepthBias: 0.001
-                        Intensity: 20.0
+                        Intensity*: 200.0
             Base:
                 BasePartAsset: e7217fa5-6512-4aad-9941-30ef0d2791e0:Prefabs/Directional light
                 BasePartId: 67e62c64-5333-42c2-aa0e-7530f65f263f

@@ -18,15 +18,23 @@ namespace LudumDare54
         public SpriteComponent SpriteComponent;
         public ISpriteProvider EnabledSprite;
 
+        public EndingTrigger ending;
+
         int _presses = 0;
 
         public override void Interact(PlayerInteract player)
         {
+            if (_presses > 20)
+                return;
+
             SpriteComponent.SpriteProvider = EnabledSprite;
             if (_presses == 0)
                 EntityToToggle.EnableAll(true, false);
 
             _presses++;
+
+            if (_presses > 20)
+                ending.Active = true;
         }
     }
 }

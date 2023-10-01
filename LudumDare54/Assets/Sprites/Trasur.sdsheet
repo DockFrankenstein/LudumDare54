@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 2c4c8b45-de53-4671-89bc-e15f32c28d49
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    46c27f7c6c02521c77ebded4b669465a:
+        Source: !file ../../Resources/trasure.png
+        Name: trasure
+        TextureRegion: {X: 0, Y: 0, Width: 2056, Height: 2056}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
