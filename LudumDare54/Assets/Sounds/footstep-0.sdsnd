@@ -1,0 +1,9 @@
+!Sound
+Id: 8bc55bb5-bfc1-45fa-9011-36453425dcf0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sounds/footstep-0.wav
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

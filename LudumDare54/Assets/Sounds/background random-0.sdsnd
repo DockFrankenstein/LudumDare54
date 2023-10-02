@@ -1,0 +1,7 @@
+!Sound
+Id: d7dbbdfd-47b7-41db-81fe-f3e4613f4c53
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sounds/background random-0.wav
+StreamFromDisk: true
+Spatialized: false

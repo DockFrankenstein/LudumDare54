@@ -19,11 +19,17 @@ namespace LudumDare54
         public const double TRANSITION_TO_DURATION = 0.4;
         public const double TRANSITION_FROM_DURATION = 0.5;
 
+        public const float SOUND_VOLUME = 0.8f;
+
         public StaticColliderComponent trigger;
         public Room teleportRoom;
         public Color transitionColor = new Color(255, 255, 255, 255);
 
+        public bool playSound = true;
+
         public event Action<PlayerMove> OnPlayerEnter;
+
+        static Random DoorSoundEffectsRandom { get; } = new Random();
 
         public override async Task Execute()
         {
@@ -52,6 +58,13 @@ namespace LudumDare54
                     });
                 }
 
+                if (playSound)
+                {
+                    var sounds = otherCollider.Entity.Get<PlayerSounds>();
+                    if (sounds != null)
+                        PlaySound(sounds);
+                }
+
                 OnPlayerEnter?.Invoke(playerMove);
 
                 //Wait for the entity to exit the trigger.
@@ -63,6 +76,19 @@ namespace LudumDare54
                 }
                 while (collision != firstCollision);
             }
+        }
+
+        static void PlaySound(PlayerSounds sounds)
+        {
+            if (sounds.doorSounds.Count == 0)
+                return;
+
+            var index = DoorSoundEffectsRandom.Next(0, sounds.doorSounds.Count);
+
+            var instance = sounds.doorSounds[index].CreateInstance();
+            instance.IsLooping = false;
+            instance.Volume = SOUND_VOLUME;
+            instance.Play();
         }
     }
 }

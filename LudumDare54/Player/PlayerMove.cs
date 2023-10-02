@@ -9,19 +9,26 @@ using Stride.Physics;
 using Stride.Engine;
 using qASIC;
 using Stride.Core;
+using BulletSharp.SoftBody;
 
 namespace LudumDare54.Player
 {
     public class PlayerMove : SyncScript
     {
+        public const float SFX_VOLUME = 0.5f;
+
         [DataMemberIgnore] public bool CanMove { get; set; } = true;
 
         public CharacterComponent character;
         public TransformComponent directionTransform;
 
         public float speed = 6f;
+        public float jumpHeight = 5f;
+        public float stepDistance = 0.3f;
 
-        [DataMember] float jumpHeight = 5f;
+        PlayerSounds sounds;
+
+        static Random Random { get; } = new Random();
 
         [DataMemberIgnore] public Atmosphere DefaultAtmosphere { get; private set; }
         private Atmosphere _currentAtmosphere;
@@ -38,15 +45,29 @@ namespace LudumDare54.Player
 
         public override void Start()
         {
+            sounds = Entity.Get<PlayerSounds>();
+
             CurrentAtmosphere = DefaultAtmosphere = new Atmosphere()
             {
                 gravity = character.Gravity,
                 jumpHeight = jumpHeight,
             };
+
+            SetStep(false);
+            _isGrounded = character.IsGrounded;
         }
+
+        bool _isGrounded;
+        Vector3 _lastStepPos;
+
+        bool CharacterGrounded =>
+            -0.1f < Entity.Transform.WorldMatrix.TranslationVector.Y &&
+            Entity.Transform.WorldMatrix.TranslationVector.Y < 0.1f &&
+            character.IsGrounded;
 
         public override void Update()
         {
+            ProcessSounds();
             directionTransform.UpdateWorldMatrix();
 
             var input = GetPathInput();
@@ -56,8 +77,42 @@ namespace LudumDare54.Player
 
             character.SetVelocity(direction * speed);
 
-            if (CanMove && character.IsGrounded && Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
+            if (CanMove && CharacterGrounded && Input.HasKeyboard && Input.IsKeyPressed(Keys.Space))
                 character.Jump(Vector3.UnitY * CurrentAtmosphere.jumpHeight);
+        }
+
+        void ProcessSounds()
+        {
+            bool groundedPreviously = _isGrounded;
+            _isGrounded = CharacterGrounded;
+
+            var pos = Entity.Transform.WorldMatrix.TranslationVector;
+            
+            if (!_isGrounded)
+                return;
+
+            if (!groundedPreviously)
+                SetStep();
+
+            if (Vector3.Distance(_lastStepPos, pos) >= stepDistance)
+                SetStep();
+        }
+
+        void SetStep(bool playSound = true)
+        {
+            _lastStepPos = Entity.Transform.WorldMatrix.TranslationVector;
+
+            if (!playSound) return;
+
+            if (sounds.footsteps.Count == 0)
+                return;
+
+            var index = Random.Next(0, sounds.footsteps.Count);
+
+            var instance = sounds.footsteps[index].CreateInstance();
+            instance.IsLooping = false;
+            instance.Volume = SFX_VOLUME;
+            instance.Play();
         }
 
         Vector2 GetPathInput()
@@ -90,6 +145,7 @@ namespace LudumDare54.Player
             character.SetVelocity(Vector3.Zero);
             character.Jump(Vector3.Zero);
             character.Teleport(targetPosition);
+            SetStep(false);
             qDebug.Log($"Teleported player to {targetPosition}");
         }
 

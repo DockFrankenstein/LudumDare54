@@ -1,0 +1,8 @@
+!Sound
+Id: 006ec9d4-1095-4fe8-8e14-e33e25ee3264
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sounds/shatter-2.wav
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: true

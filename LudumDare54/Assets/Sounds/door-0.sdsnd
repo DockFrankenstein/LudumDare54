@@ -1,0 +1,9 @@
+!Sound
+Id: 7b944bc7-5b20-4bfe-8bb7-67fbcc6c1d1e
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sounds/door-0.wav
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

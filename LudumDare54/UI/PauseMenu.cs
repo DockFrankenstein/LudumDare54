@@ -6,7 +6,7 @@ using Myra.Graphics2D.Brushes;
 
 namespace LudumDare54.UI
 {
-    public class PauseMenu : UICanvas
+    public class PauseMenu : UICanvas 
     {
         public const float FADE_OPACITY = 0.5f;
         public const string CURSOR_STATE_NAME = "pause";

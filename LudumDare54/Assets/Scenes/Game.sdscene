@@ -236,6 +236,7 @@ Hierarchy:
                         trigger: ref!! dc1343d9-0616-44a7-92f3-c238b9a73d8c
                         teleportRoom*: ref!! 443223b7-3c67-4b65-b200-90f31e401ca7
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -403,7 +404,7 @@ Hierarchy:
                 Components:
                     d9f6321795ae13454f181c1046726ccd: !TransformComponent
                         Id: a04a6160-c965-4618-8409-c3962d70562f
-                        Position*: {X: 0.0, Y: -14.13166, Z: 0.0}
+                        Position*: {X: 0.0, Y: -8.0, Z: 0.0}
                         Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -433,6 +434,18 @@ Hierarchy:
                         trigger: ref!! cab794c7-b5f1-4f8d-b5f0-87e08207add6
                         teleportRoom: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound*: false
+                    b61a4166c31a105103ea1c0defd4e215*: !LudumDare54.EndingTrigger,LudumDare54
+                        Id: 132a09a0-ce5b-4929-aade-9456acd14ee9
+                        activeByDefault: false
+                        uiPriority: 0
+                        Active: false
+                        door: ref!! 4051ced2-0fe6-4276-a938-8375321887f9
+                        backgroundColor: {R: 255, G: 255, B: 255, A: 255}
+                        textColor: {R: 0, G: 0, B: 0, A: 255}
+                        messages:
+                            4a9e62088210043965f7e82ffbec1b8a: In life
+                            dd65cb021d64003be2334005e4bb2aec: there's roblos
             Base:
                 BasePartAsset: 771c75ec-513f-4239-b0ee-d8b7572f0a1b:Prefabs/Door
                 BasePartId: 10bc4e35-15ed-44a9-9f54-efb302bcfd41
@@ -472,6 +485,7 @@ Hierarchy:
                         trigger: ref!! 3de02058-35fa-498d-a2a7-3e47237e15e7
                         teleportRoom*: ref!! c4146a79-8914-411e-8cf9-5d82f7079048
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -624,10 +638,14 @@ Hierarchy:
                             e40f80e2df9749a1f8dd3b97c675c9a3: ref!! 3d0d7789-7a7c-4eb2-ab28-80138c9a7990
                             d1075401a81238639c2a4724da6639fb: ref!! 8800d6a2-fd3b-4f87-b9d7-8492edd1f564
                             55d20452fcd387fe3149fce2d558f076: ref!! 666fa021-feb1-494a-95dc-009a7e0f622c
+                            322142cacdbc9a097027d1c7188004a5: ref!! 118833a4-487c-43e2-8a87-2f12b152de88
                             09200679dce470015374a30d4c2f5479: ref!! d703923f-fbf4-4a23-9c64-0dc6d0af0ef6
+                            8537542892e161a4012403a719e40108: ref!! 9a6a6ce1-dac6-4c35-aeaa-f23651f0133f
                             f72b79e81be339f507a865e3d01eebb6: ref!! e7873f87-5bd0-4125-a795-a0e510c9743d
                             fb306c7574a09261cb94c6acddbaefd5: ref!! 98ff26a4-b19e-4461-948b-e67ddb8c01a3
+                            53a9498e51b1c325955616a10e288b58: ref!! 0423dede-322f-4235-978b-22063e69526b
                             c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! a8d1f056-9ba0-4d8e-b5ba-24143a0595bf
+                            cd3c44ea1053d0665d3725485771ce38: ref!! 6048b8fe-4276-4d45-91ea-0f1f66ca436a
                             761038817211a1e05101c6c2a4bb11bc: ref!! f44ea2eb-b34a-43f4-9544-3156c2704345
                             2af59c2f65bb543537447e489db01184: ref!! 6e7e2048-bf80-4e4d-b087-7c5c8a39db5c
                             e6f58c4d4b2bac0922f63965ffad38b3: ref!! be4e5794-957c-49ba-a041-0d33401161a5
@@ -678,6 +696,8 @@ Hierarchy:
                         Name: null
                         Projection: Perspective
                         Slot: b3634505-47e8-4ff2-81dc-11f6181125df
+                    b15027ab8ad875c69cafb45beed14fa5: !AudioListenerComponent
+                        Id: 74e5509d-cbc0-44d2-ae3b-a28330b7f267
         -   Entity:
                 Id: 174af2b1-29fe-444a-a36b-aa2b1a957862
                 Name: Ground
@@ -880,6 +900,7 @@ Hierarchy:
                         trigger: ref!! cd6c5966-ee92-4ad3-8957-ea0037f1e7b7
                         teleportRoom*: ref!! 834b0229-a2da-4259-bcf4-aaf092fa469b
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -919,6 +940,7 @@ Hierarchy:
                         trigger: ref!! 60f32925-b743-468f-8862-261be1c71b7f
                         teleportRoom*: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
                     2614ff92e54a305c13c4d70e3603a43e*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: 17edcaae-067c-45d3-be81-39f54f467234
                         activeByDefault: false
@@ -1202,6 +1224,7 @@ Hierarchy:
                         trigger: ref!! 353d178c-c577-441e-a764-31d696b4f476
                         teleportRoom*: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
                     6ba3ff33c62845d741957ce12b2e62ad*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: 08d8f46f-c4aa-4ed8-885c-bdbe91ccb204
                         activeByDefault: false
@@ -1520,6 +1543,7 @@ Hierarchy:
                         trigger: ref!! 20913c3a-e4ac-47c2-b556-aa2e69d0ce08
                         teleportRoom*: ref!! c7842fde-23b2-4298-923a-5ff39ba2dcf4
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -1571,6 +1595,7 @@ Hierarchy:
                         trigger: ref!! b02b2c2e-6906-470d-8196-e57b3d5f9b65
                         teleportRoom*: ref!! b538c05f-28b4-4832-9d1c-91aa9a04206f
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -1682,6 +1707,43 @@ Hierarchy:
                 BasePartAsset: e45ce7be-3761-4134-8570-f368f06c0322:Prefabs/Ground Platform
                 BasePartId: 79b55de9-5cc6-42d1-b05b-8b7fbf56998e
                 InstanceId: 94936f11-bcb5-49cd-b6cb-c1c125a33461
+        -   Folder: null
+            Entity:
+                Id: 37739194-af40-4d81-9143-652f582cd6bb
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 6048b8fe-4276-4d45-91ea-0f1f66ca436a
+                        Position*: {X: -10.0, Y: -30.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 88088047-a434-41af-afaa-b58c52749e41
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 00095bfd-4ca0-4d78-9fe6-7159184f82d5
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: edd97754-63fa-463c-b94d-aa68c71aff20
         -   Entity:
                 Id: 37f3ce61-6a26-4283-9526-633bc6cab0d8
                 Name: Directional light
@@ -2054,6 +2116,7 @@ Hierarchy:
                         trigger: ref!! dc2d610d-8d90-4439-b3a8-e426ce087690
                         teleportRoom: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
                     9e2c4ddb813ef0bb3dd58c177344eb01*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: bea4afa1-28ea-4975-a02d-ba03a597252f
                         activeByDefault: false
@@ -2273,6 +2336,7 @@ Hierarchy:
                         trigger: ref!! d84d09c3-ed64-48cb-bed5-c9d785f8cf7c
                         teleportRoom*: ref!! 335301d8-f462-44ee-a39c-534fad776551
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -2524,6 +2588,8 @@ Hierarchy:
                         character: ref!! a3c2e806-e42e-4597-b64e-518361a3284a
                         directionTransform: ref!! 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
                         speed: 6.0
+                        jumpHeight: 5.0
+                        stepDistance: 3.0
                     a23f19d534c227bb3a3c5a4a0d4dc34c: !LudumDare54.Player.PlayerLook,LudumDare54
                         Id: f3e32042-fefb-4054-ba3b-2ecc95de3c03
                         XRotation: ref!! 5f2a0426-9ec3-4aca-829f-a9b495706d53
@@ -2535,6 +2601,20 @@ Hierarchy:
                         physicsComponent: !CharacterComponent ref!! a3c2e806-e42e-4597-b64e-518361a3284a
                         layer: DefaultFilter, StaticFilter, KinematicFilter, DebrisFilter, SensorTrigger, CharacterFilter, CustomFilter2, CustomFilter3, CustomFilter4, CustomFilter5, CustomFilter6, CustomFilter7, CustomFilter8, CustomFilter9, CustomFilter10
                         interactUI: ref!! e02b1d00-29f5-4557-9270-d59721d35c29
+                    df831dd3ff32e8638086bfbb35e3c532: !LudumDare54.Player.PlayerSounds,LudumDare54
+                        Id: b0843715-2717-488c-ae53-5bd453ab3cf6
+                        doorSounds:
+                            782f45749f9501e9fe05418e1d576404: 7b944bc7-5b20-4bfe-8bb7-67fbcc6c1d1e:Sounds/door-0
+                            022c608813ec5f899b16c77f6fe2367e: bb02d2a6-48ce-409f-8af1-8ea75bb852aa:Sounds/door-1
+                            56d1bd79843ddf75fcf8b1cbba290076: 88366c59-c46b-409c-8d76-827aa1e9a593:Sounds/door-2
+                            257e1de405063f4286d9665a9cdf2a89: 9533e0e4-97a3-4a40-84c2-8927837b1d41:Sounds/door-3
+                        footsteps:
+                            62a262fbc4d93d6d90a7e03e69cc2560: 8bc55bb5-bfc1-45fa-9011-36453425dcf0:Sounds/footstep-0
+                            f66116e80fdde63c26a698c707e95a78: e41e6cfb-43b6-4add-8c90-3a33c3cdc60f:Sounds/footstep-1
+                            a9f1448d2d03cf56ba83fc5a8ca5ee9f: 2919e664-d21d-407b-8464-d33a8a49958f:Sounds/footstep-2
+                            3418c625d1ee7258c98d85b19c41dc6e: 34353955-887a-476c-a528-7c220bc92313:Sounds/footstep-3
+                            2ffa1080fc5d27eb221468c2d876f4fd: a94aab07-57f6-4b83-8591-8e14e4f4c0ac:Sounds/footstep-4
+                            8d27da277000e99040c208b7e3d3bf36: 3c1e8289-5f84-44b8-bf60-a17f15ca1ada:Sounds/footstep-5
         -   Entity:
                 Id: 4c77f22e-c3ea-4fa4-9a18-75c9545b5081
                 Name: Directional light
@@ -2776,7 +2856,7 @@ Hierarchy:
                 Components:
                     d9f6321795ae13454f181c1046726ccd: !TransformComponent
                         Id: 54c04ead-280e-407f-aa1d-f6c2e738d7a3
-                        Position*: {X: 0.0, Y: -14.13166, Z: 0.0}
+                        Position*: {X: 0.0, Y: -8.0, Z: 0.0}
                         Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -2806,14 +2886,15 @@ Hierarchy:
                         trigger: ref!! 7d58ed3e-1801-4902-9bc8-e99377b9004a
                         teleportRoom: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound*: false
                     cb5883208b30f941cdc25c65659ee2b1*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: 9506e04f-cf23-4a6d-a43d-cf37ae36db46
                         activeByDefault: false
                         uiPriority: 0
                         Active: false
                         door: ref!! e65914c4-d0d1-4ae5-a065-006ab0232000
-                        backgroundColor: {R: 0, G: 0, B: 0, A: 255}
-                        textColor: {R: 255, G: 255, B: 255, A: 255}
+                        backgroundColor: {R: 255, G: 255, B: 255, A: 255}
+                        textColor: {R: 0, G: 0, B: 0, A: 255}
                         messages:
                             18d63c03bd559a24fcb97b725122c06b: '"Money"'
                             738efee803ac9afb0babc69c9ae262d4: '- John Riccitiello'
@@ -2942,6 +3023,7 @@ Hierarchy:
                         trigger: ref!! 3ffb9916-dcff-4c6e-8746-1f4c6089b220
                         teleportRoom*: ref!! a344fe07-1635-4d13-8417-61664e749044
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -3283,6 +3365,43 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
                 InstanceId: 20d9a1e6-779f-4167-8e8f-8da912816e3f
+        -   Folder: null
+            Entity:
+                Id: 66d603de-2dcc-4cca-aa1c-1721b2bdc4f7
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 0d5f0c58-3d17-4538-8802-b7b778a700a1
+                        Position*: {X: 0.0, Y: -30.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 77ab8e54-a562-4def-a619-f6db8140da3b
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 3fd9aadd-1787-4cf1-84d6-3a2bba00c00e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: ebd83029-2cd7-4375-8110-742abce51fd1
         -   Entity:
                 Id: 688fdfb4-496f-4dfb-ad12-9c97ff9cd83e
                 Name: Ground
@@ -3490,6 +3609,7 @@ Hierarchy:
                         trigger: ref!! d16e8a54-8024-4876-b980-db787616fd13
                         teleportRoom: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
                     34763a73de35ad5a0655f34d42bcb661*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: 5f2d86ed-3ea5-4cd4-b690-f329edf8652c
                         activeByDefault: false
@@ -3931,6 +4051,43 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
                 InstanceId: c0198885-6796-46e7-8e11-f000bbba82db
+        -   Folder: null
+            Entity:
+                Id: 796b4aee-3033-4585-8dd1-588dabfb911c
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: fe2491c5-55ad-4a7c-acaf-9906d3c62283
+                        Position*: {X: 0.0, Y: -30.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 2cf191cd-b64c-431f-9874-0ac0947fa5c3
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 31d418c9-3be5-4801-bbd6-9e5d708b2aff
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: 7310657c-da2a-49f1-ae0b-119ee5f6568c
         -   Entity:
                 Id: 7d24befd-9361-4125-8697-8ac68bedb4bc
                 Name: Ground
@@ -4362,6 +4519,7 @@ Hierarchy:
                         trigger: ref!! 71266baf-1fc0-4a71-9195-60c1e9280504
                         teleportRoom*: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound*: false
                     a5e65c39399043914e9f20e257de7741*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: d959648f-7379-4601-85ae-f4da763b407e
                         activeByDefault: false
@@ -4450,6 +4608,7 @@ Hierarchy:
                         trigger: ref!! 2b16e9aa-fcdd-4bb4-a38a-022c9f7a1f6d
                         teleportRoom*: ref!! e6116e14-ccae-4a55-8512-a26cd2d7ce62
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound*: false
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -4713,6 +4872,43 @@ Hierarchy:
                 InstanceId: 94936f11-bcb5-49cd-b6cb-c1c125a33461
         -   Folder: null
             Entity:
+                Id: 999de5a5-cb06-46e2-8538-646779c71c0e
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 0423dede-322f-4235-978b-22063e69526b
+                        Position*: {X: 10.0, Y: -30.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: ccabcce5-cef0-47fa-a8bb-cfc2fc144af7
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 43e27010-7c2f-4d6d-90a4-ec26aab7b1f9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 2e14ba99-20a8-454f-822b-0d2a2d098c2d
+        -   Folder: null
+            Entity:
                 Id: 9a6d1312-4fa5-4650-859e-1ebb4e98e1b5
                 Name: Ground Platform Wall
                 Components:
@@ -4730,6 +4926,43 @@ Hierarchy:
                 BasePartAsset: e45ce7be-3761-4134-8570-f368f06c0322:Prefabs/Ground Platform
                 BasePartId: f2705900-ec86-405c-8f30-da929382baec
                 InstanceId: 0a4eb9c7-c8c4-43a3-bc3c-96dc3290e2ac
+        -   Folder: null
+            Entity:
+                Id: 9abff862-f9af-418e-af4a-71214b17174b
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 9a6a6ce1-dac6-4c35-aeaa-f23651f0133f
+                        Position*: {X: 0.0, Y: -30.0, Z: 10.0}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: af04d489-3e8e-4b95-ae74-f47e1f0bb607
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            13adb126f88e93e56e3ad635cd694445~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 3684427e-2092-43a9-98df-80fce8e04d17
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 29a16428-a7e0-4175-989c-93b32a1efaea
+                InstanceId: af81d5be-2214-4476-b0b5-e6dcb6b5d259
         -   Entity:
                 Id: 9b0b54d7-4b65-4db4-addd-61a3ce5ec737
                 Name: Ground
@@ -4927,6 +5160,7 @@ Hierarchy:
                         trigger: ref!! 1abcb745-0b1f-41f1-855c-9fef72e60921
                         teleportRoom*: ref!! 313a57cd-c324-45ac-99a0-61f92aebe98a
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -5315,6 +5549,7 @@ Hierarchy:
                         trigger: ref!! 424b21b4-024e-4717-9a5f-3b3cf6abe05d
                         teleportRoom*: ref!! e6ebc3b5-b14b-465b-b737-90551583546a
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -5419,6 +5654,7 @@ Hierarchy:
                         trigger: ref!! 96e2a858-b2e2-4380-851d-dff534965140
                         teleportRoom*: ref!! 6b6acb1f-56ac-4370-86ac-f0f29726604f
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -5712,10 +5948,14 @@ Hierarchy:
                             e40f80e2df9749a1f8dd3b97c675c9a3: ref!! b8128863-e061-4ee7-a3bc-2f144548d98a
                             d1075401a81238639c2a4724da6639fb: ref!! 193449c5-4303-45aa-b9d8-6515425ea37b
                             55d20452fcd387fe3149fce2d558f076: ref!! 934da57c-52ab-407d-903c-6ee2acde6653
+                            2196e9557dd72901b9a0f9d32da4810e: ref!! 0d5f0c58-3d17-4538-8802-b7b778a700a1
                             09200679dce470015374a30d4c2f5479: ref!! 10512ba8-d374-44f7-90f1-939a6f7760ca
+                            3bc3616c3e3ccbf857c15c78bd1680ff: ref!! fe2491c5-55ad-4a7c-acaf-9906d3c62283
                             f72b79e81be339f507a865e3d01eebb6: ref!! eec30952-13c1-4864-92dc-d73ca589b5d3
                             fb306c7574a09261cb94c6acddbaefd5: ref!! 0de5c3d5-0eba-48a4-a760-b0cc1d5276d2
+                            f65685f9a19e13c13b1899c15330a8ea: ref!! 3f377d86-a485-4056-8c3f-acb629d33be9
                             c8e62ee1de40f6fc4d5c043b9ce7d325: ref!! acf9b7d9-2bbb-4e3a-a1e8-299b3739e93c
+                            196e3ca4ecdb4efe3829c9c019f78025: ref!! 4e812163-4b40-413c-8008-a77d5d11e838
                             f2356cab33a460e76d6f0516d94b80d6: ref!! e1b0a7f4-2256-4e45-ae5e-eed69acad98f
                             ac899f3280256b590e13cac0a1409804: ref!! dae2dacc-9369-4ec5-8758-b47948775588
                             68ab51f3f320d44b075d5ec274fa92c8: ref!! 850b6b52-4924-4795-913d-b9bcf08571da
@@ -6196,6 +6436,7 @@ Hierarchy:
                         trigger: ref!! 7a2cc63f-fdde-4096-b2e0-d496b5dc7b2b
                         teleportRoom*: ref!! f1067cff-cc4c-4730-97fb-d3fbc4607a7c
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -6503,6 +6744,9 @@ Hierarchy:
                         EnabledSprite: !SpriteFromSheet
                             Sheet: d7712bed-64da-4871-8901-edff35f7b446:Sprites/Button On
                         ending: ref!! 881d178a-773c-4b2e-becb-b1d27ad6f894
+                        sounds:
+                            053c1050c47d744787e57ce54c706524: 006ec9d4-1095-4fe8-8e14-e33e25ee3264:Sounds/shatter-2
+                            39061e2519bc83cde36852112d33646e: 813668c2-6293-4e30-865f-aa2a93c72064:Sounds/shatter-3
                     344dd0a444538db91bc1023522b0a7cf: !StaticColliderComponent
                         Id: cee1f05c-1bb7-4eb1-ad7f-60b85972cdd3
                         CanSleep: false
@@ -7010,6 +7254,43 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 26c8326f-1291-4dbb-b2d0-010796e88e7b
                 InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Folder: null
+            Entity:
+                Id: df1d68e8-dc78-4054-9f28-a36a02d68dd6
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 3f377d86-a485-4056-8c3f-acb629d33be9
+                        Position*: {X: 10.0, Y: -30.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: d5db1b8e-a462-45b4-97df-4e31dd26a5f8
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            2b1fe6b368862121221eed3030e89bd1~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 323cd659-fa79-48d2-b370-4a0a52789a7e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 719f11fe-8d3d-4f24-a2f4-fc553f5e6915
+                InstanceId: 581ed15b-263a-4812-9873-b15db7980fb2
         -   Entity:
                 Id: dfb83a93-27af-49fa-9911-ef830c07c894
                 Name: Directional light
@@ -7261,6 +7542,7 @@ Hierarchy:
                         trigger: ref!! a0166662-09bd-4768-941f-743665620480
                         teleportRoom*: ref!! d5216f36-c865-4953-b090-967da18a21b9
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0
@@ -7315,6 +7597,43 @@ Hierarchy:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: 6cd37e39-6606-45d8-b94e-4ef636f8f68b
                 InstanceId: 1011839a-5697-4b98-8997-4c45356d56a9
+        -   Folder: null
+            Entity:
+                Id: e69adb8c-5ff6-42af-86f6-a85f8a40941a
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 118833a4-487c-43e2-8a87-2f12b152de88
+                        Position*: {X: 0.0, Y: -30.0, Z: -10.0}
+                        Rotation: {X: 0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: 024c21f8-9470-4c40-83cf-ce71c1a513e1
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            5f7aea3a985afb353d83a286d5742563~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: e002501b-921b-40db-89d1-ff43c997faf9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: c84011a4-74a0-4bd1-983d-f9263fbea550
+                InstanceId: f7649a76-a5a7-414b-83e6-81b6471a5a8f
         -   Entity:
                 Id: e822f8cd-e8c3-4734-8aa5-7934e213f810
                 Name: Directional light
@@ -7507,6 +7826,7 @@ Hierarchy:
                         trigger: ref!! 7b822eec-073d-4596-a7ed-b06c81cc96b4
                         teleportRoom*: null
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
                     6fbd695bf2c554d40780cfa4abd75aef*: !LudumDare54.EndingTrigger,LudumDare54
                         Id: ff0325c4-ca21-40f3-bfe2-fb769a8b37fd
                         activeByDefault: false
@@ -7561,6 +7881,43 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             22293cd3a95bc450913a5136c4a7502c: ref!! 54c04ead-280e-407f-aa1d-f6c2e738d7a3
+        -   Folder: null
+            Entity:
+                Id: ed84972e-e033-47ba-a54f-8dc2d839c7c3
+                Name: Ground
+                Components:
+                    c7fb7c6c476deaea582172f3c5e034c9: !TransformComponent
+                        Id: 4e812163-4b40-413c-8008-a77d5d11e838
+                        Position*: {X: -10.0, Y: -30.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: 0.0, Z: -0.70710677, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    930df06a70f939953fb68b1e2b0e5234: !ModelComponent
+                        Id: dee3050a-b23e-414a-937a-30e895651997
+                        Model: 1f6ad730-dc7c-42bd-8718-448d1e3c7414:Models/Ground
+                        IsShadowCaster: false
+                        Materials:
+                            f983cd96f3f69a574238f5e00e4120eb~0: 02e4df15-f437-4eb7-93ac-3112e7e2a3f0:Materials/Walls
+                    513732bc76fcc93d0ea54a19bf423f84: !StaticColliderComponent
+                        Id: 1dca7a77-6d99-4338-a61d-76681429951e
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a8219f347d228ef317a3f63418655d64: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 40.0, Y: 0.5, Z: 40.0}
+                                LocalOffset: {X: 0.0, Y: -0.25, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
+                BasePartId: 57270980-a269-4216-9768-debb5e3dbd3e
+                InstanceId: 1a5cac39-235a-4bbe-974f-467c4c46b6f7
         -   Folder: null
             Entity:
                 Id: edd14b0e-0664-4c2e-b834-d8701ec78b78
@@ -7659,6 +8016,7 @@ Hierarchy:
                         trigger: ref!! cf7668d6-de5d-4671-9910-a1a5854d8e39
                         teleportRoom*: ref!! 71889e4e-3049-4b19-8d28-0a06f9ede0cd
                         transitionColor: {R: 255, G: 255, B: 255, A: 255}
+                        playSound: true
             Base:
                 BasePartAsset: 956458f8-9636-4259-ab86-38fff7c581a2:Prefabs/Room
                 BasePartId: a5e9b949-07df-4510-b0e1-bccf5ce5c1b0

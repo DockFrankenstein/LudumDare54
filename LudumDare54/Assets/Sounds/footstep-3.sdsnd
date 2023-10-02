@@ -1,0 +1,9 @@
+!Sound
+Id: 34353955-887a-476c-a528-7c220bc92313
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sounds/footstep-3.wav
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false
