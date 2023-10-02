@@ -40,7 +40,7 @@ Hierarchy:
                         maxWaitTime: 120.0
                         backgroundSound: d6b949ce-d2f6-46d8-a064-6186f7ae5aed:Sounds/background
                         sounds:
-                            f0c99f7acfd7f57361d7bfb5ea21abd1: d7dbbdfd-47b7-41db-81fe-f3e4613f4c53:Sounds/background random-0
+                            f0c99f7acfd7f57361d7bfb5ea21abd1: 602308e4-a355-4563-a007-1c712a79fad6:Sounds/background random-0
                             262ee9defc4c9fb36ea6ab806df96643: de2d70b5-031d-4ca8-b065-7276a28abc1c:Sounds/background random-1
                         volume: 0.5
                         soundClipsVolume: 0.25

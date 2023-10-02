@@ -31,13 +31,24 @@ namespace LudumDare54.Music
             await backgroundInstance.ReadyToPlay();
             backgroundInstance.Play();
 
+            await WaitRandom();
+            await PlaySound(sounds[0]);
+
             while (Game.IsRunning)
+            {
+                await WaitRandom();
+                var sound = sounds[random.Next(0, sounds.Count)];
+                await PlaySound(sound);
+            }
+
+            async Task WaitRandom()
             {
                 var waitAmount = random.NextDouble() * (maxWaitTime - minWaitTime) + minWaitTime;
                 await Task.Delay((int)Math.Round(waitAmount * 1000.0));
+            }
 
-                var sound = sounds[random.Next(0, sounds.Count)];
-
+            async Task PlaySound(Sound sound)
+            {
                 using (SoundInstance soundInstance = sound.CreateInstance())
                 {
                     soundInstance.IsLooping = false;
