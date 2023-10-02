@@ -441,8 +441,8 @@ Hierarchy:
                         uiPriority: 0
                         Active: false
                         door: ref!! 4051ced2-0fe6-4276-a938-8375321887f9
-                        backgroundColor: {R: 255, G: 255, B: 255, A: 255}
-                        textColor: {R: 0, G: 0, B: 0, A: 255}
+                        backgroundColor: {R: 0, G: 0, B: 0, A: 255}
+                        textColor: {R: 255, G: 255, B: 255, A: 255}
                         messages:
                             4a9e62088210043965f7e82ffbec1b8a: In life
                             dd65cb021d64003be2334005e4bb2aec: there's roblos
@@ -2895,8 +2895,8 @@ Hierarchy:
                         uiPriority: 0
                         Active: false
                         door: ref!! e65914c4-d0d1-4ae5-a065-006ab0232000
-                        backgroundColor: {R: 255, G: 255, B: 255, A: 255}
-                        textColor: {R: 0, G: 0, B: 0, A: 255}
+                        backgroundColor: {R: 0, G: 0, B: 0, A: 255}
+                        textColor: {R: 255, G: 255, B: 255, A: 255}
                         messages:
                             18d63c03bd559a24fcb97b725122c06b: '"Money"'
                             738efee803ac9afb0babc69c9ae262d4: '- John Riccitiello'
