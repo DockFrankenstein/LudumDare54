@@ -38,7 +38,7 @@ namespace LudumDare54
 
                 var txt = File.ReadAllText(FILE_PATH);
 
-                SettingsData = JsonConvert.DeserializeObject<GameSettingsData>(txt);
+                JsonConvert.PopulateObject(txt, SettingsData);
             }
             catch (Exception e)
             {
@@ -76,6 +76,8 @@ namespace LudumDare54
             Game.GraphicsDeviceManager.PreferredBackBufferHeight = SettingsData.resolutionVertical == 0 ?
                 Game.Window.ClientBounds.Height :
                 SettingsData.resolutionVertical;
+
+            Game.Audio.AudioEngine.MasterVolume = SettingsData.volume;
         }
 
         public void Save()
@@ -97,6 +99,9 @@ namespace LudumDare54
             public int resolutionHorizontal;
             public int resolutionVertical;
             public bool fullscreen;
+            public float mouseSensitivity;
+            public float fov;
+            public float volume;
 
             public static GameSettingsData Default =>
                 new GameSettingsData()
@@ -104,6 +109,9 @@ namespace LudumDare54
                     resolutionHorizontal = 0,
                     resolutionVertical = 0,
                     fullscreen = true,
+                    mouseSensitivity = 1f,
+                    fov = 50f,
+                    volume = 1f,
                 };
 
             public static bool operator ==(GameSettingsData a, GameSettingsData b) =>
@@ -119,7 +127,10 @@ namespace LudumDare54
 
                 return resolutionVertical == data.resolutionVertical &&
                     resolutionHorizontal == data.resolutionHorizontal &&
-                    fullscreen == data.fullscreen;
+                    fullscreen == data.fullscreen &&
+                    mouseSensitivity == data.mouseSensitivity &&
+                    fov == data.fov &&
+                    volume == data.volume;
             }
 
             public override int GetHashCode() =>

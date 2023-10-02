@@ -80,19 +80,17 @@ namespace LudumDare54.UI
 
         private Widget CreateSettingsContent()
         {
-            var outsideGrid = new Grid();
+            var outsideGrid = new Grid()
+            {
+
+            };
 
             outsideGrid.RowsProportions.Add(new Proportion(ProportionType.Fill));
             outsideGrid.RowsProportions.Add(new Proportion());
             outsideGrid.RowsProportions.Add(new Proportion());
 
-
-            var scroll = new ScrollViewer()
-            {
-                GridRow = 0,
-                Content = CreateSettings(),
-                ShowHorizontalScrollBar = false,
-            };
+            var scroll = CreateSettings();
+            scroll.GridRow = 0;
 
             outsideGrid.Widgets.Add(scroll);
 
@@ -158,12 +156,16 @@ namespace LudumDare54.UI
             var grid = new Grid()
             {
                 VerticalAlignment = VerticalAlignment.Top,
+                HorizontalAlignment = HorizontalAlignment.Left,
             };
 
-            grid.ColumnsProportions.Add(new Proportion(ProportionType.Part, 4f));
+            grid.ColumnsProportions.Add(new Proportion(ProportionType.Part, 6f));
             grid.ColumnsProportions.Add(new Proportion(ProportionType.Part, 10f));
 
             grid.Widgets.Add(CreateSettingsLabel("Fullscreen", 0));
+            //grid.Widgets.Add(CreateSettingsLabel("Mouse Sensitivity", 1));
+            //grid.Widgets.Add(CreateSettingsLabel("FOV", 2));
+            //grid.Widgets.Add(CreateSettingsLabel("Volume", 3));
             grid.Widgets.Add(CreateSettingsLabel("UI Debug", 1));
 
             fullscreenToggle = new ComboBox()
@@ -217,6 +219,7 @@ namespace LudumDare54.UI
                     GridRow = gridRow,
                     GridColumn = 0,
                     Font = MyraRenderer.Ft_SpartanRegular.GetFont(20),
+                    HorizontalAlignment = HorizontalAlignment.Left,
                 };
         }
     }

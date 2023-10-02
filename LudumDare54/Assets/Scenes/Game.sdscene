@@ -2595,6 +2595,7 @@ Hierarchy:
                         Id: f3e32042-fefb-4054-ba3b-2ecc95de3c03
                         XRotation: ref!! 5f2a0426-9ec3-4aca-829f-a9b495706d53
                         YRotation: ref!! 1cc0534b-45cf-4e0c-ae43-bbb3c7773f63
+                        Camera: ref!! 337ed693-3e2a-47c9-a0d9-8d88dcfa9ed7
                     18555c2dc9bb96e067f06da0622b85e4: !LudumDare54.Player.PlayerInteract,LudumDare54
                         Id: 1fbc81a7-a082-483c-9ae4-f25edcefa86b
                         length: 3.0
