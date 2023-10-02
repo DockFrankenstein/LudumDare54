@@ -695,6 +695,7 @@ Hierarchy:
                         Id: 337ed693-3e2a-47c9-a0d9-8d88dcfa9ed7
                         Name: null
                         Projection: Perspective
+                        VerticalFieldOfView: 50.0
                         Slot: b3634505-47e8-4ff2-81dc-11f6181125df
                     b15027ab8ad875c69cafb45beed14fa5: !AudioListenerComponent
                         Id: 74e5509d-cbc0-44d2-ae3b-a28330b7f267
